@@ -19,7 +19,7 @@
                 <div class="col-lg-7">
                     <div class="hero-img-wrap">
                         
-                        <img src="libs/client/images/couch.png" class="img-fluid">
+                        <img src="libs/client/images/um-medico-jovem-e-bonito-em-branco-removebg-preview.png" class="img-fluid">
                     </div>
                 </div>
             </div>
