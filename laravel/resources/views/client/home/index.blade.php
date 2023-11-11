@@ -9,23 +9,26 @@
             <div class="row justify-content-between">
                 <div class="col-lg-5">
                     <div class="intro-excerpt">
-                        <h1>Modern Interior <span clsas="d-block">Design Studio</span></h1>
-                        <p class="mb-4">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
-                            vulputate velit imperdiet dolor tempor tristique.</p>
-                        <p><a href="" class="btn btn-secondary me-2">Shop Now</a><a href="#"
-                                class="btn btn-white-outline">Explore</a></p>
+                        <h1><span class="d-block">Mind-Well</span> Salud Mental</h1>
+                        <p class="mb-4">Cuidado especializado y compasivo en un entorno seguro y acogedor, para guiarle
+                            hacia su bienestar emocional.</p>
+                        <p><a href="#services" class="btn btn-secondary me-2">Servicios</a><a href="#contact"
+                                class="btn btn-white-outline">Contacto</a></p>
                     </div>
                 </div>
-                
+
                 <div class="col-lg-7">
                     <div class="hero-img-wrap">
-                        
-                        <img src="libs/client/images/um-medico-jovem-e-bonito-em-branco-removebg-preview.png" class="img-fluid">
+                        <!-- Asegúrate de reemplazar 'src' con la ruta correcta a la imagen que deseas mostrar -->
+                        <img src="libs/client/images/um-medico-jovem-e-bonito-em-branco-removebg-preview.png"
+                            class="img-fluid" alt="Equipo de Mind-Well">
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+
     <!-- End Hero Section -->
 
     <!-- Start Product Section -->
@@ -272,7 +275,8 @@
 
                                             <div class="author-info">
                                                 <div class="author-pic">
-                                                    <img src="libs/client/images/person-1.png" alt="Maria Jones" class="img-fluid">
+                                                    <img src="libs/client/images/person-1.png" alt="Maria Jones"
+                                                        class="img-fluid">
                                                 </div>
                                                 <h3 class="font-weight-bold">Maria Jones</h3>
                                                 <span class="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span>
@@ -300,7 +304,8 @@
 
                                             <div class="author-info">
                                                 <div class="author-pic">
-                                                    <img src="libs/client/images/person-1.png" alt="Maria Jones" class="img-fluid">
+                                                    <img src="libs/client/images/person-1.png" alt="Maria Jones"
+                                                        class="img-fluid">
                                                 </div>
                                                 <h3 class="font-weight-bold">Maria Jones</h3>
                                                 <span class="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span>
@@ -328,7 +333,8 @@
 
                                             <div class="author-info">
                                                 <div class="author-pic">
-                                                    <img src="libs/client/images/person-1.png" alt="Maria Jones" class="img-fluid">
+                                                    <img src="libs/client/images/person-1.png" alt="Maria Jones"
+                                                        class="img-fluid">
                                                 </div>
                                                 <h3 class="font-weight-bold">Maria Jones</h3>
                                                 <span class="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span>
