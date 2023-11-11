@@ -9,11 +9,11 @@
 <link rel="canonical" href="https://demo-basic.adminkit.io/" />
 <title>MarKawaii QHH</title>
 
-<link href="{{ asset('libs/css/app.css') }}" rel="stylesheet">
-<link href="{{ asset('libs/css/custom.css') }}" rel="stylesheet">
+<link href="{{ asset('libs/admin/css/app.css') }}" rel="stylesheet">
+<link href="{{ asset('libs/admin/css/custom.css') }}" rel="stylesheet">
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-<script src="{{ asset('libs/js/fontawesome.js') }}" crossorigin="anonymous"></script>
+<script src="{{ asset('libs/admin/js/fontawesome.js') }}" crossorigin="anonymous"></script>
 
 
 <link href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" rel="stylesheet">

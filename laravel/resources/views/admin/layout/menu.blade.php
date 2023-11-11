@@ -1,6 +1,6 @@
 <nav id="sidebar" class="sidebar js-sidebar">
     <div class="sidebar-content js-simplebar">
-        <a class="sidebar-brand" href="{{ route('home.index') }}">
+        <a class="sidebar-brand" href="">
             <em class=" arrow-right"></em>
             <span class="align-middle">MarKawaii QHH</span>
         </a>
@@ -11,8 +11,8 @@
             </li>
 
             <!-- Elemento del sidebar para Inicio -->
-            <li class="sidebar-item {{ Route::currentRouteName() == 'home.index' ? 'active' : '' }}">
-                <a class="sidebar-link" href="{{ route('home.index') }}">
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="">
                     <em class="align-middle" data-feather="home"></em> <span class="align-middle">Inicio</span>
                 </a>
             </li>
@@ -61,8 +61,8 @@
                 </a>
             </li>
 
-            <li class="sidebar-item {{ Route::currentRouteName() == 'cliente.index' ? 'active' : '' }}">
-                <a class="sidebar-link" href="{{ route('cliente.index') }}">
+            <li class="sidebar-item ">
+                <a class="sidebar-link" href="">
                     <em class="align-middle" data-feather="briefcase"></em> <span class="align-middle">Clientes</span>
                 </a>
             </li>

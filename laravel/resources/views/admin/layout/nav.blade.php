@@ -151,7 +151,7 @@
                 </a>
 
                 <a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-bs-toggle="dropdown">
-                    <img src="{{ Auth::user()->photo ?? asset('libs/img/avatars/avatar-6.jpg') }}" 
+                    <img src="{{ Auth::user()->photo ?? asset('libs/admin/img/avatars/avatar-6.jpg') }}" 
                          class="avatar img-fluid rounded me-1" 
                          alt="{{ Auth::user()->name ?? 'Sin Nombre' }}" 
                     />
@@ -170,7 +170,7 @@
                     <a class="dropdown-item" href="#"><i class="align-middle me-1"
                             data-feather="help-circle"></i> Help Center</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="{{ route('logout') }}">Cerrar sesión</a>
+                    <a class="dropdown-item" href="">Cerrar sesión</a>
                 </div>
             </li>
         </ul>

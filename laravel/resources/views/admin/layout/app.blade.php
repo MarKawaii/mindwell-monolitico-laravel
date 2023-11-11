@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-	@include('layout.head')
+	@include('admin.layout.head')
 </head>
 
 <body>
 	<div class="wrapper">
-		@include('layout.menu')
+		@include('admin.layout.menu')
 		<div class="main">
-			@include('layout.nav')
+			@include('admin.layout.nav')
 			<main class="content">
 
                 <!-- Pantalla de carga -->
@@ -25,12 +25,12 @@
 			</main>
 
 			<footer class="footer">
-				@include('layout.footer')
+				@include('admin.layout.footer')
 			</footer>
 		</div>
 	</div>
 
-	@include('layout.script')
+	@include('admin.layout.script')
 
 	<script>
 		// Oculta la pantalla de carga una vez que la página esté completamente cargada

@@ -1,4 +1,4 @@
-<script src="{{ asset('libs/js/app.js') }}"></script>
+<script src="{{ asset('libs/admin/js/app.js') }}"></script>
 
 <script>
     $(document).ready(function() {
