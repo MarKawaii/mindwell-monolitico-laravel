@@ -33,13 +33,27 @@ El repositorio contiene los siguientes directorios:
 * 2 Asegúrese de tener instalado Docker
 * 3 Abra una terminal y navegue hasta la carpeta del proyecto.
 * 4 Copiar los archivos .env example ```.env.example```
-* 5 Ejecute el comando ```docker-compose up -d``` Esto levantará los contenedores necesarios para ejecutar el proyecto.
-* 6 Ejecute el comando ```docker exec -it minidwell-laravel-monolitico-app-1 /bin/bash```.
+* 5 Ejecute el comando ```docker-compose up -d``` Esto levantará los contenedores necesarios para ejecutar el proyecto. 
+* 6 Ejecute el comando ```docker exec -it minidwell-laravel-monolitico-app-1 /bin/bash```. esto permite entrar al container de docker, para poder ejecutar los siguientes comandos
+
 * 7 Dentro del contenedor, ejecute el comando ```composer install```.
 * 8 Dentro del contenedor, ejecute el comando ```composer update```.
-* 9 Dentro del contenedor, ejecute el comando ```php artisan migrate:fresh --seed```.
-* 10 Dentro del contenedor, ejecute el comando ```php artisan key:generate```.
-* 11 Dentro del contenedor, ejecute el comando ```php artisan optimize```.
+* 9 Dentro del contenedor, ejecute el comando ```php artisan migrate:fresh --seed```. baja las tablas de las bdd, las vuelve a crear y crear las semillas
+* 10 Dentro del contenedor, ejecute el comando ```php artisan key:generate```. 
+* 11 Dentro del contenedor, ejecute el comando ```php artisan optimize```. actualiza rutas ( si encuentro error, tiro ese comando para ver si se soluciona XD)
 * 12 Si no ha cambiado la dirección, utilice la siguiente URL para visualizar el proyecto: ```http://localhost```.
 * 13 Una vez que se hayan completado estos pasos, la aplicación Laravel debería estar lista para su uso.
+
+## comandos esenciales para programar en laravel
+* esto no tiene nada que ver con comandos para leb¿vantar el proyecto
+
+* 1 ```php artisan optimize```
+* 2 ```php artisan make:controller```
+* 3 ```php artisan make:controller -r```
+* 4 ```php artisan migrate```
+* 5 ```php artisan migrate:fresh``` 
+* 6 ```php artisan migrate:fresh --seed```
+* 7 ```php artisan make:model -m``` 
+* 8 ```php artisan clear``` 
+* 9 ```php artisan clear:cache``` 
 
