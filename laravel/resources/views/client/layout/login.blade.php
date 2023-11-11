@@ -7,7 +7,9 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body d-flex justify-content-center">
-                <a href="{{ route('google.login') }}" class="btn btn-danger">Login con Google</a>
+                <a href="{{ route('google.login') }}" class="btn btn-danger btn-google">
+                    <i class="fab fa-google me-2"></i> Login con Google
+                </a>
             </div>
         </div>
     </div>
