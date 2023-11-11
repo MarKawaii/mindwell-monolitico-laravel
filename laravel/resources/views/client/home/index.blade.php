@@ -18,7 +18,8 @@
                 </div>
                 <div class="col-lg-7">
                     <div class="hero-img-wrap">
-                        <img src="images/couch.png" class="img-fluid">
+                        
+                        <img src="libs/client/images/couch.png" class="img-fluid">
                     </div>
                 </div>
             </div>
@@ -43,12 +44,12 @@
                 <!-- Start Column 2 -->
                 <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
                     <a class="product-item" href="cart.html">
-                        <img src="images/product-1.png" class="img-fluid product-thumbnail">
+                        <img src="libs/client/images/product-1.png" class="img-fluid product-thumbnail">
                         <h3 class="product-title">Nordic Chair</h3>
                         <strong class="product-price">$50.00</strong>
 
                         <span class="icon-cross">
-                            <img src="images/cross.svg" class="img-fluid">
+                            <img src="libs/client/images/cross.svg" class="img-fluid">
                         </span>
                     </a>
                 </div>
@@ -57,12 +58,12 @@
                 <!-- Start Column 3 -->
                 <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
                     <a class="product-item" href="cart.html">
-                        <img src="images/product-2.png" class="img-fluid product-thumbnail">
+                        <img src="libs/client/images/product-2.png" class="img-fluid product-thumbnail">
                         <h3 class="product-title">Kruzo Aero Chair</h3>
                         <strong class="product-price">$78.00</strong>
 
                         <span class="icon-cross">
-                            <img src="images/cross.svg" class="img-fluid">
+                            <img src="libs/client/images/cross.svg" class="img-fluid">
                         </span>
                     </a>
                 </div>
@@ -71,12 +72,12 @@
                 <!-- Start Column 4 -->
                 <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
                     <a class="product-item" href="cart.html">
-                        <img src="images/product-3.png" class="img-fluid product-thumbnail">
+                        <img src="libs/client/images/product-3.png" class="img-fluid product-thumbnail">
                         <h3 class="product-title">Ergonomic Chair</h3>
                         <strong class="product-price">$43.00</strong>
 
                         <span class="icon-cross">
-                            <img src="images/cross.svg" class="img-fluid">
+                            <img src="libs/client/images/cross.svg" class="img-fluid">
                         </span>
                     </a>
                 </div>
@@ -100,7 +101,7 @@
                         <div class="col-6 col-md-6">
                             <div class="feature">
                                 <div class="icon">
-                                    <img src="images/truck.svg" alt="Image" class="imf-fluid">
+                                    <img src="libs/client/images/truck.svg" alt="Image" class="imf-fluid">
                                 </div>
                                 <h3>Fast &amp; Free Shipping</h3>
                                 <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
@@ -111,7 +112,7 @@
                         <div class="col-6 col-md-6">
                             <div class="feature">
                                 <div class="icon">
-                                    <img src="images/bag.svg" alt="Image" class="imf-fluid">
+                                    <img src="libs/client/images/bag.svg" alt="Image" class="imf-fluid">
                                 </div>
                                 <h3>Easy to Shop</h3>
                                 <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
@@ -122,7 +123,7 @@
                         <div class="col-6 col-md-6">
                             <div class="feature">
                                 <div class="icon">
-                                    <img src="images/support.svg" alt="Image" class="imf-fluid">
+                                    <img src="libs/client/images/support.svg" alt="Image" class="imf-fluid">
                                 </div>
                                 <h3>24/7 Support</h3>
                                 <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
@@ -133,7 +134,7 @@
                         <div class="col-6 col-md-6">
                             <div class="feature">
                                 <div class="icon">
-                                    <img src="images/return.svg" alt="Image" class="imf-fluid">
+                                    <img src="libs/client/images/return.svg" alt="Image" class="imf-fluid">
                                 </div>
                                 <h3>Hassle Free Returns</h3>
                                 <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
@@ -146,7 +147,7 @@
 
                 <div class="col-lg-5">
                     <div class="img-wrap">
-                        <img src="images/why-choose-us-img.jpg" alt="Image" class="img-fluid">
+                        <img src="libs/client/images/why-choose-us-img.jpg" alt="Image" class="img-fluid">
                     </div>
                 </div>
 
@@ -161,9 +162,9 @@
             <div class="row justify-content-between">
                 <div class="col-lg-7 mb-5 mb-lg-0">
                     <div class="imgs-grid">
-                        <div class="grid grid-1"><img src="images/img-grid-1.jpg" alt="Untree.co"></div>
-                        <div class="grid grid-2"><img src="images/img-grid-2.jpg" alt="Untree.co"></div>
-                        <div class="grid grid-3"><img src="images/img-grid-3.jpg" alt="Untree.co"></div>
+                        <div class="grid grid-1"><img src="libs/client/images/img-grid-1.jpg" alt="Untree.co"></div>
+                        <div class="grid grid-2"><img src="libs/client/images/img-grid-2.jpg" alt="Untree.co"></div>
+                        <div class="grid grid-3"><img src="libs/client/images/img-grid-3.jpg" alt="Untree.co"></div>
                     </div>
                 </div>
                 <div class="col-lg-5 ps-lg-5">
@@ -193,7 +194,7 @@
                 <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
                     <div class="product-item-sm d-flex">
                         <div class="thumbnail">
-                            <img src="images/product-1.png" alt="Image" class="img-fluid">
+                            <img src="libs/client/images/product-1.png" alt="Image" class="img-fluid">
                         </div>
                         <div class="pt-3">
                             <h3>Nordic Chair</h3>
@@ -206,7 +207,7 @@
                 <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
                     <div class="product-item-sm d-flex">
                         <div class="thumbnail">
-                            <img src="images/product-2.png" alt="Image" class="img-fluid">
+                            <img src="libs/client/images/product-2.png" alt="Image" class="img-fluid">
                         </div>
                         <div class="pt-3">
                             <h3>Kruzo Aero Chair</h3>
@@ -219,7 +220,7 @@
                 <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
                     <div class="product-item-sm d-flex">
                         <div class="thumbnail">
-                            <img src="images/product-3.png" alt="Image" class="img-fluid">
+                            <img src="libs/client/images/product-3.png" alt="Image" class="img-fluid">
                         </div>
                         <div class="pt-3">
                             <h3>Ergonomic Chair</h3>
@@ -270,7 +271,7 @@
 
                                             <div class="author-info">
                                                 <div class="author-pic">
-                                                    <img src="images/person-1.png" alt="Maria Jones" class="img-fluid">
+                                                    <img src="libs/client/images/person-1.png" alt="Maria Jones" class="img-fluid">
                                                 </div>
                                                 <h3 class="font-weight-bold">Maria Jones</h3>
                                                 <span class="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span>
@@ -298,7 +299,7 @@
 
                                             <div class="author-info">
                                                 <div class="author-pic">
-                                                    <img src="images/person-1.png" alt="Maria Jones" class="img-fluid">
+                                                    <img src="libs/client/images/person-1.png" alt="Maria Jones" class="img-fluid">
                                                 </div>
                                                 <h3 class="font-weight-bold">Maria Jones</h3>
                                                 <span class="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span>
@@ -326,7 +327,7 @@
 
                                             <div class="author-info">
                                                 <div class="author-pic">
-                                                    <img src="images/person-1.png" alt="Maria Jones" class="img-fluid">
+                                                    <img src="libs/client/images/person-1.png" alt="Maria Jones" class="img-fluid">
                                                 </div>
                                                 <h3 class="font-weight-bold">Maria Jones</h3>
                                                 <span class="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span>
@@ -363,7 +364,7 @@
 
                 <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
                     <div class="post-entry">
-                        <a href="#" class="post-thumbnail"><img src="images/post-1.jpg" alt="Image"
+                        <a href="#" class="post-thumbnail"><img src="libs/client/images/post-1.jpg" alt="Image"
                                 class="img-fluid"></a>
                         <div class="post-content-entry">
                             <h3><a href="#">First Time Home Owner Ideas</a></h3>
@@ -377,7 +378,7 @@
 
                 <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
                     <div class="post-entry">
-                        <a href="#" class="post-thumbnail"><img src="images/post-2.jpg" alt="Image"
+                        <a href="#" class="post-thumbnail"><img src="libs/client/images/post-2.jpg" alt="Image"
                                 class="img-fluid"></a>
                         <div class="post-content-entry">
                             <h3><a href="#">How To Keep Your Furniture Clean</a></h3>
@@ -391,7 +392,7 @@
 
                 <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
                     <div class="post-entry">
-                        <a href="#" class="post-thumbnail"><img src="images/post-3.jpg" alt="Image"
+                        <a href="#" class="post-thumbnail"><img src="libs/client/images/post-3.jpg" alt="Image"
                                 class="img-fluid"></a>
                         <div class="post-content-entry">
                             <h3><a href="#">Small Space Furniture Apartment Ideas</a></h3>
