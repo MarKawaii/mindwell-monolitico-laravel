@@ -10,14 +10,21 @@
 
         <div class="collapse navbar-collapse" id="navbarsFurni">
             <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
-                <li class="nav-item active">
+                <li class="nav-item {{ Route::currentRouteName() == 'index' ? 'active' : '' }}">
                     <a class="nav-link" href="{{ route('index') }}">Inicio</a>
                 </li>
                 
-                <li><a class="nav-link" href="{{ route('about') }}">Quiénes Somos</a></li>
+                <li class="nav-item {{ Route::currentRouteName() == 'about' ? 'active' : '' }}">
+                    <a class="nav-link" href="{{ route('about') }}">Quiénes Somos</a>
+                </li>
+
                 <li><a class="nav-link" href="services.html">Servicios</a></li>
                 <li><a class="nav-link" href="services.html">Centros Médicos</a></li>
-                <li><a class="nav-link" href="{{ route('autohelp') }}">Autoayuda</a></li>
+                
+                <li class="nav-item {{ Route::currentRouteName() == 'autohelp' ? 'active' : '' }}">
+                    <a class="nav-link" href="{{ route('autohelp') }}">Autoayuda</a>
+                </li>
+
                 <li><a class="nav-link" href="blog.html">Especialistas</a></li>
                 <li><a class="nav-link" href="contact.html">Contáctanos</a></li>
                 {{-- <li><a class="nav-link" href="{{ route('admin.index') }}">Panel Admin Prueba</a></li> --}}
