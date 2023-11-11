@@ -6,7 +6,7 @@
 @section('content')
     <div class="row">
         
-
+<h1>Hola mundo</h1>
         
     </div>
 
