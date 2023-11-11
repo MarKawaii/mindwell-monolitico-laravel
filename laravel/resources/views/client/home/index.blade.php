@@ -16,6 +16,7 @@
                                 class="btn btn-white-outline">Explore</a></p>
                     </div>
                 </div>
+                
                 <div class="col-lg-7">
                     <div class="hero-img-wrap">
                         

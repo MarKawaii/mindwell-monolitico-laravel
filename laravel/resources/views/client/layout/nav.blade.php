@@ -13,14 +13,14 @@
                 <li class="nav-item {{ Route::currentRouteName() == 'index' ? 'active' : '' }}">
                     <a class="nav-link" href="{{ route('index') }}">Inicio</a>
                 </li>
-                
+
                 <li class="nav-item {{ Route::currentRouteName() == 'about' ? 'active' : '' }}">
                     <a class="nav-link" href="{{ route('about') }}">Quiénes Somos</a>
                 </li>
 
                 <li><a class="nav-link" href="services.html">Servicios</a></li>
                 <li><a class="nav-link" href="services.html">Centros Médicos</a></li>
-                
+
                 <li class="nav-item {{ Route::currentRouteName() == 'autohelp' ? 'active' : '' }}">
                     <a class="nav-link" href="{{ route('autohelp') }}">Autoayuda</a>
                 </li>
@@ -32,9 +32,29 @@
             </ul>
 
             <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
-                <li><a class="nav-link" href="#"><img src="libs/client/images/user.svg"></a></li>
-                <li><a class="nav-link" href="cart.html"><img src="libs/client/images/cart.svg"></a></li>
-            </ul>
+                @if (Auth::check())
+                    <!-- Si el usuario está autenticado, redirecciona a otra vista (por ejemplo, perfil del usuario) -->
+                    <li>
+                        <a class="nav-link" href="aque va la ruta user edit">
+                            <i class="fa-solid fa-user fa-lg" aria-hidden="true"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="nav-link" href="{{ route('logout') }}">
+                            <i class="fa-solid fa-door-closed fa-lg" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                @else
+                    <!-- Si el usuario NO está autenticado, muestra el modal de login -->
+                    <li>
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#googleLoginModal">
+                            <i class="fa-solid fa-user fa-lg" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                @endif
+                <!-- Modal -->
+                @include('client.layout.login')
         </div>
     </div>
 
