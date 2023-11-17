@@ -11,10 +11,31 @@ use Laravel\Socialite\Facades\Socialite;
 
 class AuthController extends Controller
 {
+    public function authenticate(Request $request)
+    {
+        $credentials = $request->validate([
+            'email' => 'required|email',
+            'password' => 'required',
+        ]);
+
+        if (Auth::attempt($credentials)) {
+            $request->session()->regenerate();
+
+            // Redirecciona a la vista de inicio de sesión después de una autenticación exitosa
+            return redirect()->route('index');
+        }
+
+        return back()->withErrors([
+            'email' => 'Las credenciales proporcionadas no coinciden con nuestros registros.',
+        ]);
+    }
+
+
+    // todo el contenido de aqui hacia abajo es para el login sso de google
     public function login()
     {
-         // si el usuario ya está logueado, lo manda al home
-         if (Auth::user()) {
+        // si el usuario ya está logueado, lo manda al home
+        if (Auth::user()) {
             return redirect()->route('home.index');
         }
 
@@ -60,7 +81,7 @@ class AuthController extends Controller
             // se crea un contraseña por defecto encriptada
             $newUser->password = Hash::make("asdasdasdasd");
             $newUser->status = true; // despues todos se crean en 0s
-            
+
             $newUser->save();
 
             Auth::login($newUser, true);

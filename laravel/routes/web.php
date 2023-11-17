@@ -18,6 +18,9 @@ Route::get('/centros_medicos', [VistasEstaticasController::class, 'mediccenter']
 Route::get('/servicios', [VistasEstaticasController::class, 'services'])->name('services');
 Route::get('/especialistas', [VistasEstaticasController::class, 'specialist'])->name('specialist');
 
+// login por email registro y recuprar contraseña
+Route::post('login', [AuthController::class, 'authenticate'])->name('login');
+
 // Login y registro sso
 Route::get('login/google', [AuthController::class, 'redirectToGoogle'])->name('google.login');
 Route::get('login/google/callback', [AuthController::class, 'handleGoogleCallback'])->name('google.callback');
