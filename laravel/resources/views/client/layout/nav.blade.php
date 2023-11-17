@@ -41,12 +41,42 @@
 
             </ul>
 
+            <style>
+                .custom-navbar-cta {
+                    display: flex;
+                    justify-content: center;
+                    /* Centra los ítems en el contenedor */
+                    align-items: center;
+                    padding: 0;
+                    list-style: none;
+                }
+
+                .custom-navbar-cta li {
+                    margin: 0 8px;
+                    /* Ajusta el espacio horizontal entre los ítems */
+                    text-align: center;
+                }
+
+                .custom-navbar-cta li:not(:last-child) {
+                    margin-right: 8px;
+                    /* Ajusta el espacio a la derecha de los ítems */
+                }
+            </style>
+
+
+
             <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
                 @if (Auth::check())
-                    <!-- Si el usuario está autenticado, redirecciona a otra vista (por ejemplo, perfil del usuario) -->
+                    <!-- Ítems autenticados... -->
                     <li>
                         <a class="nav-link" href="aque va la ruta user edit">
                             <i class="fa-solid fa-user fa-lg" aria-hidden="true"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="nav-link" href="{{ route('admin.index') }}">
+                            <i class="fa-solid fa-lock fa-lg" aria-hidden="true"></i>
                         </a>
                     </li>
 
@@ -56,15 +86,17 @@
                         </a>
                     </li>
                 @else
-                    <!-- Si el usuario NO está autenticado, muestra el modal de login -->
+                    <!-- Ítems no autenticados... -->
                     <li>
                         <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#googleLoginModal">
                             <i class="fa-solid fa-user fa-lg" aria-hidden="true"></i>
                         </a>
                     </li>
                 @endif
-                <!-- Modal -->
-                @include('client.layout.login')
+            </ul>
+
+            <!-- Modal -->
+            @include('client.layout.login')
         </div>
     </div>
 
