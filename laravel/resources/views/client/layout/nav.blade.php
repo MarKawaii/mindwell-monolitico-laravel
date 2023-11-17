@@ -41,7 +41,7 @@
 
             </ul>
 
-            <style>
+            {{-- <style>
                 .custom-navbar-cta {
                     display: flex;
                     justify-content: center;
@@ -61,7 +61,7 @@
                     margin-right: 8px;
                     /* Ajusta el espacio a la derecha de los ítems */
                 }
-            </style>
+            </style> --}}
 
 
 
@@ -74,11 +74,11 @@
                         </a>
                     </li>
 
-                    <li>
+                    {{-- <li>
                         <a class="nav-link" href="{{ route('admin.index') }}">
                             <i class="fa-solid fa-lock fa-lg" aria-hidden="true"></i>
                         </a>
-                    </li>
+                    </li> --}}
 
                     <li>
                         <a class="nav-link" href="{{ route('logout') }}">
