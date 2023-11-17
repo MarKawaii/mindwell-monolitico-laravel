@@ -18,15 +18,25 @@
                     <a class="nav-link" href="{{ route('about') }}">Quiénes Somos</a>
                 </li>
 
-                <li><a class="nav-link" href="services.html">Servicios</a></li>
-                <li><a class="nav-link" href="services.html">Centros Médicos</a></li>
+                <li class="nav-item {{ Route::currentRouteName() == 'services' ? 'active' : '' }}">
+                    <a class="nav-link" href="{{ route('services') }}">Servicios</a>
+                </li>
+
+                <li class="nav-item {{ Route::currentRouteName() == 'mediccenter' ? 'active' : '' }}">
+                    <a class="nav-link" href="{{ route('mediccenter') }}">Centros Médicos</a>
+                </li>
 
                 <li class="nav-item {{ Route::currentRouteName() == 'autohelp' ? 'active' : '' }}">
                     <a class="nav-link" href="{{ route('autohelp') }}">Autoayuda</a>
                 </li>
 
-                <li><a class="nav-link" href="blog.html">Especialistas</a></li>
-                <li><a class="nav-link" href="contact.html">Contáctanos</a></li>
+                <li class="nav-item {{ Route::currentRouteName() == 'specialist' ? 'active' : '' }}">
+                    <a class="nav-link" href="{{ route('specialist') }}">Especialistas</a>
+                </li>
+
+                <li class="nav-item {{ Route::currentRouteName() == 'contactus' ? 'active' : '' }}">
+                    <a class="nav-link" href="{{ route('contactus') }}">Contáctanos</a>
+                </li>
                 {{-- <li><a class="nav-link" href="{{ route('admin.index') }}">Panel Admin Prueba</a></li> --}}
 
             </ul>

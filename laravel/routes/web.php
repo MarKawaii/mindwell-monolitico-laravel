@@ -13,6 +13,11 @@ Route::resource('/', HomeController::class);
 Route::get('/quienes_somos', [VistasEstaticasController::class, 'about'])->name('about'); 
 Route::get('/auto_ayuda', [VistasEstaticasController::class, 'autohelp'])->name('autohelp');
 
+Route::get('/contactanos', [VistasEstaticasController::class, 'contactus'])->name('contactus');
+Route::get('/centros_medicos', [VistasEstaticasController::class, 'mediccenter'])->name('mediccenter');
+Route::get('/servicios', [VistasEstaticasController::class, 'services'])->name('services');
+Route::get('/especialistas', [VistasEstaticasController::class, 'specialist'])->name('specialist');
+
 // Login y registro sso
 Route::get('login/google', [AuthController::class, 'redirectToGoogle'])->name('google.login');
 Route::get('login/google/callback', [AuthController::class, 'handleGoogleCallback'])->name('google.callback');
