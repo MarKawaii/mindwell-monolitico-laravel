@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 
@@ -7,6 +6,8 @@
 </head>
 
 <body>
+
+
     <!-- Start Header/Navigation -->
     @include('client.layout.nav')
     <!-- End Header/Navigation -->
@@ -19,6 +20,7 @@
     <!-- End Footer Section -->
 
     @include('client.layout.script')
+
 </body>
 
 </html>

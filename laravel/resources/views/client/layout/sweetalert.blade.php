@@ -1,3 +1,21 @@
+@if ($errors->any())
+    <script>
+        var laravelErrors = @json($errors->all());
+        window.onload = function() {
+            Swal.fire({
+                title: 'Errores detectados',
+                icon: 'error',
+                html: '<ul>' + laravelErrors.map(function(error) {
+                    return '<li>' + error + '</li>';
+                }).join('') + '</ul>',
+                confirmButtonColor: '#3085d6',
+                confirmButtonText: 'OK'
+            });
+        };
+    </script>
+@endif
+
+
 <script>
     function confirmLogout(event) {
         event.preventDefault(); // Previene el comportamiento por defecto del enlace
@@ -19,3 +37,5 @@
         });
     }
 </script>
+
+

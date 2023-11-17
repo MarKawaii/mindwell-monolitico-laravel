@@ -41,29 +41,6 @@
 
             </ul>
 
-            {{-- <style>
-                .custom-navbar-cta {
-                    display: flex;
-                    justify-content: center;
-                    /* Centra los ítems en el contenedor */
-                    align-items: center;
-                    padding: 0;
-                    list-style: none;
-                }
-
-                .custom-navbar-cta li {
-                    margin: 0 8px;
-                    /* Ajusta el espacio horizontal entre los ítems */
-                    text-align: center;
-                }
-
-                .custom-navbar-cta li:not(:last-child) {
-                    margin-right: 8px;
-                    /* Ajusta el espacio a la derecha de los ítems */
-                }
-            </style> --}}
-
-
 
             <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
                 @if (Auth::check())
@@ -74,18 +51,12 @@
                         </a>
                     </li>
 
-                    {{-- <li>
-                        <a class="nav-link" href="{{ route('admin.index') }}">
-                            <i class="fa-solid fa-lock fa-lg" aria-hidden="true"></i>
-                        </a>
-                    </li> --}}
 
                     <li>
                         <a class="nav-link" href="#" onclick="confirmLogout(event)">
                             <i class="fa-solid fa-door-closed fa-lg" aria-hidden="true"></i>
                         </a>
                     </li>
-                    
                 @else
                     <!-- Ítems no autenticados... -->
                     <li>
