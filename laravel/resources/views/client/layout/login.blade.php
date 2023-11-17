@@ -38,11 +38,11 @@
                     <div class="mb-3">
                         <label for="emailInput" class="form-label">Correo</label>
                         <input type="email" name="email" class="form-control" id="emailInput"
-                            aria-describedby="emailHelp">
+                            aria-describedby="emailHelp" required>
                     </div>
                     <div class="mb-3">
                         <label for="passwordInput" class="form-label">Contraseña</label>
-                        <input type="password" name="password" class="form-control" id="passwordInput">
+                        <input type="password" name="password" class="form-control" id="passwordInput" required>
                     </div>
                     <button type="submit" class="btn btn-custom-color w-100">Iniciar Sesión</button>
                 </form>

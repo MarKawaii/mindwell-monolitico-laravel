@@ -13,4 +13,6 @@
 <link href="{{ asset('libs/client/css/style.css') }}" rel="stylesheet">
 <script src="https://kit.fontawesome.com/8e117c4f16.js" crossorigin="anonymous"></script>
 
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 <title>MIND-WELL - Inicio</title>

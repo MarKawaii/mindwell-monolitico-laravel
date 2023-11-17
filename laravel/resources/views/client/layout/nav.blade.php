@@ -81,10 +81,11 @@
                     </li> --}}
 
                     <li>
-                        <a class="nav-link" href="{{ route('logout') }}">
+                        <a class="nav-link" href="#" onclick="confirmLogout(event)">
                             <i class="fa-solid fa-door-closed fa-lg" aria-hidden="true"></i>
                         </a>
                     </li>
+                    
                 @else
                     <!-- Ítems no autenticados... -->
                     <li>
@@ -97,6 +98,7 @@
 
             <!-- Modal -->
             @include('client.layout.login')
+            @include('client.layout.sweetalert')
         </div>
     </div>
 
