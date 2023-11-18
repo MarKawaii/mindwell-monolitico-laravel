@@ -34,6 +34,7 @@ El repositorio contiene los siguientes directorios:
 * 3 Abra una terminal y navegue hasta la carpeta del proyecto.
 * 4 Copiar los archivos .env example ```.env.example```
 * 5 Ejecute el comando ```docker-compose up -d``` Esto levantará los contenedores necesarios para ejecutar el proyecto. 
+
 * 6 Ejecute el comando ```docker exec -it minidwell-laravel-monolitico-app-1 /bin/bash```. esto permite entrar al container de docker, para poder ejecutar los siguientes comandos
 
 * 7 Dentro del contenedor, ejecute el comando ```composer install```.
