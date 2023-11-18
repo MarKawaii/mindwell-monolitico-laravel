@@ -58,3 +58,7 @@ El repositorio contiene los siguientes directorios:
 * 8 ```php artisan clear``` 
 * 9 ```php artisan clear:cache``` 
 
+
+## comando para el servidor
+* 1  ```ssh ubuntu@16.171.57.3```.
+* 2  ```docker exec -it minidwell-laravel-monolitico_app_1 /bin/bash```.
