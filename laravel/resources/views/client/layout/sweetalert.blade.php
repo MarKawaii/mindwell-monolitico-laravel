@@ -15,6 +15,20 @@
     </script>
 @endif
 
+@if(session('success'))
+    <script>
+        window.addEventListener('load', function() {
+            Swal.fire({
+                title: 'Éxito!',
+                text: '{{ session("success") }}',
+                icon: 'success',
+                confirmButtonText: 'Aceptar'
+            });
+        });
+    </script>
+@endif
+
+
 
 <script>
     function confirmLogout(event) {

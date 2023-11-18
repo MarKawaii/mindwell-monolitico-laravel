@@ -20,6 +20,9 @@ Route::get('/especialistas', [VistasEstaticasController::class, 'specialist'])->
 
 // login por email registro y recuprar contraseña
 Route::post('login', [AuthController::class, 'authenticate'])->name('login');
+Route::get('register', [AuthController::class, 'register'])->name('register');
+Route::post('crear-usuario', [AuthController::class, 'crearUsuario'])->name('crear.usuario');
+
 
 // Login y registro sso
 Route::get('login/google', [AuthController::class, 'redirectToGoogle'])->name('google.login');

@@ -49,7 +49,7 @@
 
                 <!-- Enlace para redirigir al registro de usuario -->
                 <div class="d-flex justify-content-center">
-                    <a href="" class="link-button btn-link">Registrarse</a>
+                    <a href="{{ route('register') }}" class="link-button btn-link">Registrarse</a>
                 </div>
 
                 <!-- Enlace para recuperar contraseña -->
