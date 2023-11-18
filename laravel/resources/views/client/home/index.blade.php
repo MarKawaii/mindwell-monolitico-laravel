@@ -38,9 +38,10 @@
 
                 <!-- Start Column 1 -->
                 <div class="col-md-12 col-lg-3 mb-5 mb-lg-0">
-                    <h2 class="mb-4 section-title">Crafted with excellent material.</h2>
-                    <p class="mb-4">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
-                        vulputate velit imperdiet dolor tempor tristique. </p>
+                    <h2 class="mb-4 section-title">¿Qué es la salud mental?</h2>
+                    <p class="mb-4">La salud mental incluye nuestro bienestar emocional, psicológico y social. Afecta la forma en que pensamos, 
+                        sentimos y actuamos cuando enfrentamos la vida. También ayuda a determinar cómo manejamos el estrés, nos relacionamos con los demás
+                        y tomamos decisiones. La salud mental es importante en todas las etapas de la vida, desde la niñez y la adolescencia hasta la adultez y la vejez. </p>
                     <p><a href="shop.html" class="btn">Explore</a></p>
                 </div>
                 <!-- End Column 1 -->
@@ -48,9 +49,9 @@
                 <!-- Start Column 2 -->
                 <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
                     <a class="product-item" href="cart.html">
-                        <img src="libs/client/images/product-1.png" class="img-fluid product-thumbnail">
-                        <h3 class="product-title">Nordic Chair</h3>
-                        <strong class="product-price">$50.00</strong>
+                        <img src="libs/client/images/image77.jpg" class="img-fluid product-thumbnail">
+                        <h3 class="product-title">Florece</h3>
+                        
 
                         <span class="icon-cross">
                             <img src="libs/client/images/cross.svg" class="img-fluid">
@@ -62,9 +63,9 @@
                 <!-- Start Column 3 -->
                 <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
                     <a class="product-item" href="cart.html">
-                        <img src="libs/client/images/product-2.png" class="img-fluid product-thumbnail">
-                        <h3 class="product-title">Kruzo Aero Chair</h3>
-                        <strong class="product-price">$78.00</strong>
+                        <img src="libs/client/images/image6.jpg" class="img-fluid product-thumbnail">
+                        <h3 class="product-title">Sana</h3>
+                        
 
                         <span class="icon-cross">
                             <img src="libs/client/images/cross.svg" class="img-fluid">
@@ -76,9 +77,9 @@
                 <!-- Start Column 4 -->
                 <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
                     <a class="product-item" href="cart.html">
-                        <img src="libs/client/images/product-3.png" class="img-fluid product-thumbnail">
-                        <h3 class="product-title">Ergonomic Chair</h3>
-                        <strong class="product-price">$43.00</strong>
+                        <img src="libs/client/images/image3.jpg" class="img-fluid product-thumbnail">
+                        <h3 class="product-title">Reconstruye</h3>
+                        
 
                         <span class="icon-cross">
                             <img src="libs/client/images/cross.svg" class="img-fluid">
@@ -97,9 +98,8 @@
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-lg-6">
-                    <h2 class="section-title">Why Choose Us</h2>
-                    <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit
-                        imperdiet dolor tempor tristique.</p>
+                    <h2 class="section-title">¿Por qué nosotros?</h2>
+                    <p>Como equipo de Mind-Well, queremos brindarte un apoyo para acceder a información sobre Salud mental y un fácil acceso a nuestros especialistas</p>
 
                     <div class="row my-5">
                         <div class="col-6 col-md-6">
@@ -109,7 +109,8 @@
                                 </div>
                                 <h3>Fast &amp; Free Shipping</h3>
                                 <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
-                                    vulputate.</p>
+                                    vulputate.
+                                </p>
                             </div>
                         </div>
 
@@ -151,7 +152,7 @@
 
                 <div class="col-lg-5">
                     <div class="img-wrap">
-                        <img src="libs/client/images/why-choose-us-img.jpg" alt="Image" class="img-fluid">
+                        <img src="libs/client/images/image5.jpg" alt="Image" class="img-fluid">
                     </div>
                 </div>
 
@@ -166,22 +167,23 @@
             <div class="row justify-content-between">
                 <div class="col-lg-7 mb-5 mb-lg-0">
                     <div class="imgs-grid">
-                        <div class="grid grid-1"><img src="libs/client/images/img-grid-1.jpg" alt="Untree.co"></div>
-                        <div class="grid grid-2"><img src="libs/client/images/img-grid-2.jpg" alt="Untree.co"></div>
-                        <div class="grid grid-3"><img src="libs/client/images/img-grid-3.jpg" alt="Untree.co"></div>
+                        <div class="grid grid-1"><img src="libs/client/images/imagedolor.jpg" alt="Untree.co"></div>
+                        <div class="grid grid-2"><img src="libs/client/images/ejercicio.jpg" alt="Untree.co"></div>
+                        <div class="grid grid-3"><img src="libs/client/images/celus.jpg" alt="Untree.co"></div>
                     </div>
                 </div>
                 <div class="col-lg-5 ps-lg-5">
-                    <h2 class="section-title mb-4">We Help You Make Modern Interior Design</h2>
-                    <p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada.
-                        Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque
-                        habitant morbi tristique senectus et netus et malesuada</p>
+                    <h2 class="section-title mb-4">Domina el estrés mental para una vida equilibrada</h2>
+                    <p>En el vertiginoso ritmo de la vida actual, gestionar el estrés mental es esencial para mantener un bienestar integral.
+                         Aprender a manejar las tensiones cotidianas puede marcar la diferencia en tu salud mental y calidad de vida. 
+                         Aquí te ofrecemos algunos consejos prácticos para reducir el estrés y encontrar la armonía en tu día a día.</p>
 
                     <ul class="list-unstyled custom-list my-4">
-                        <li>Donec vitae odio quis nisl dapibus malesuada</li>
-                        <li>Donec vitae odio quis nisl dapibus malesuada</li>
-                        <li>Donec vitae odio quis nisl dapibus malesuada</li>
-                        <li>Donec vitae odio quis nisl dapibus malesuada</li>
+                        <li><strong>Práctica de Respiración Profunda:</strong> Tómate minutos diarios para inhalar y exhalar lentamente. Calma el sistema nervioso y reduce la ansiedad.</li>
+                        <li><strong>Desconexión Digital:</strong> Establece límites al uso del celular. Desconéctate para reducir la sobreestimulación y favorecer la relajación.</li>
+                        <li><strong>Ejercicio Regular:</strong> Camina, corre, practica yoga. El ejercicio libera endorfinas, actúan como analgésicos naturales y mejoran el estado de ánimo.</li>
+                        <li><strong>Mindfulness:</strong> Dedica tiempo a la atención plena. Medita, observa conscientemente o presta atención plena a tus actividades diarias. Mejora la concentración.</li>
+
                     </ul>
                     <p><a herf="#" class="btn">Explore</a></p>
                 </div>
@@ -355,7 +357,7 @@
     </div>
     <!-- End Testimonial Slider -->
 
-    <!-- Start Blog Section -->
+    {{-- <!-- Start Blog Section -->
     <div class="blog-section">
         <div class="container">
             <div class="row mb-5">
@@ -413,5 +415,5 @@
 
             </div>
         </div>
-    </div>
+    </div> --}}
 @endsection
