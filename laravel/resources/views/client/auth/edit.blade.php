@@ -76,7 +76,8 @@
                         <div class="form-group row">
                             <div class="col-md-12">
                                 <label for="email" class="text-black">Correo </label>
-                                <input type="email" class="form-control" value="{{ $user['email'] }}" minlength="10" maxlength="50" readonly>
+                                <input type="email" class="form-control" value="{{ $user['email'] }}" minlength="10"
+                                    maxlength="50" readonly>
                             </div>
                         </div>
 
@@ -107,13 +108,16 @@
                                     </option>
                                     <option value="la_serena" {{ $user['ciudad'] == 'la_serena' ? 'selected' : '' }}>La
                                         Serena</option>
-                                    <option value="coquimbo" {{ $user['ciudad'] == 'coquimbo' ? 'selected' : '' }}>Coquimbo
+                                    <option value="coquimbo" {{ $user['ciudad'] == 'coquimbo' ? 'selected' : '' }}>
+                                        Coquimbo
                                     </option>
                                     <option value="valparaiso" {{ $user['ciudad'] == 'valparaiso' ? 'selected' : '' }}>
                                         Valparaíso</option>
-                                    <option value="viña_del_mar" {{ $user['ciudad'] == 'viña_del_mar' ? 'selected' : '' }}>
+                                    <option value="viña_del_mar"
+                                        {{ $user['ciudad'] == 'viña_del_mar' ? 'selected' : '' }}>
                                         Viña del Mar</option>
-                                    <option value="rancagua" {{ $user['ciudad'] == 'rancagua' ? 'selected' : '' }}>Rancagua
+                                    <option value="rancagua" {{ $user['ciudad'] == 'rancagua' ? 'selected' : '' }}>
+                                        Rancagua
                                     </option>
                                     <option value="talca" {{ $user['ciudad'] == 'talca' ? 'selected' : '' }}>Talca
                                     </option>
