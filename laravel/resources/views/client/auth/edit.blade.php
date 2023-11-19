@@ -17,8 +17,9 @@
                             <div class="col-md-12">
                                 <label for="nombre" class="text-black">Nombre Completo <span
                                         class="text-danger">*</span></label>
-                                <input type="text" class="form-control" name="nombre" value="{{ $user['name'] }}" oninput="this.value=this.value.replace(/[^a-zA-Z ]/g, '')"
-                                    maxlength="30" required>
+                                <input type="text" class="form-control" name="nombre" value="{{ $user['name'] }}"
+                                    oninput="this.value=this.value.replace(/[^a-zA-Z ]/g, '')" minlength="5" maxlength="30"
+                                    required>
                             </div>
                         </div>
 
@@ -27,15 +28,19 @@
                                 <label for="Genero" class="text-black">Genero <span class="text-danger">*</span></label>
                                 <select name="genero" class="form-control" required>
                                     <option value="" disabled>Seleccione un género</option>
-                                    <option value="Masculino" {{ $user->genero == 'Masculino' ? 'selected' : '' }}>Masculino</option>
-                                    <option value="Femenino" {{ $user->genero == 'Femenino' ? 'selected' : '' }}>Femenino</option>
+                                    <option value="Masculino" {{ $user->genero == 'Masculino' ? 'selected' : '' }}>Masculino
+                                    </option>
+                                    <option value="Femenino" {{ $user->genero == 'Femenino' ? 'selected' : '' }}>Femenino
+                                    </option>
                                     <option value="Otros" {{ $user->genero == 'Otros' ? 'selected' : '' }}>Otros</option>
                                 </select>
                             </div>
 
                             <div class="col-md-6">
-                                <label for="fecha_nacimiento" class="text-black">Fecha de Nacimiento <span class="text-danger">*</span></label>
-                                <input type="date" name="fecha_nacimiento" class="form-control" value="{{ $user['fecha_nacimiento'] }}" required>
+                                <label for="fecha_nacimiento" class="text-black">Fecha de Nacimiento <span
+                                        class="text-danger">*</span></label>
+                                <input type="date" name="fecha_nacimiento" class="form-control"
+                                    value="{{ $user['fecha_nacimiento'] }}" required>
                             </div>
                         </div>
 
@@ -47,24 +52,31 @@
                             </div>
 
                             <div class="col-md-6">
-                                <label for="estadoCivil" class="text-black">Estado Civil <span class="text-danger">*</span></label>
+                                <label for="estadoCivil" class="text-black">Estado Civil <span
+                                        class="text-danger">*</span></label>
                                 <select class="form-control" name="estadoCivil" required>
                                     <option value="" disabled>Seleccione su estado civil</option>
-                                    <option value="soltero" {{ $user->estado_civil == 'soltero' ? 'selected' : '' }}>Soltero/a</option>
-                                    <option value="casado" {{ $user->estado_civil == 'casado' ? 'selected' : '' }}>Casado/a</option>
-                                    <option value="divorciado" {{ $user->estado_civil == 'divorciado' ? 'selected' : '' }}>Divorciado/a</option>
-                                    <option value="viudo" {{ $user->estado_civil == 'viudo' ? 'selected' : '' }}>Viudo/a</option>
-                                    <option value="unionLibre" {{ $user->estado_civil == 'unionLibre' ? 'selected' : '' }}>Unión libre</option>
-                                    <option value="separado" {{ $user->estado_civil == 'separado' ? 'selected' : '' }}>Separado/a</option>
+                                    <option value="soltero" {{ $user->estado_civil == 'soltero' ? 'selected' : '' }}>
+                                        Soltero/a</option>
+                                    <option value="casado" {{ $user->estado_civil == 'casado' ? 'selected' : '' }}>Casado/a
+                                    </option>
+                                    <option value="divorciado" {{ $user->estado_civil == 'divorciado' ? 'selected' : '' }}>
+                                        Divorciado/a</option>
+                                    <option value="viudo" {{ $user->estado_civil == 'viudo' ? 'selected' : '' }}>Viudo/a
+                                    </option>
+                                    <option value="unionLibre" {{ $user->estado_civil == 'unionLibre' ? 'selected' : '' }}>
+                                        Unión libre</option>
+                                    <option value="separado" {{ $user->estado_civil == 'separado' ? 'selected' : '' }}>
+                                        Separado/a</option>
                                 </select>
                             </div>
-                            
+
                         </div>
 
                         <div class="form-group row">
                             <div class="col-md-12">
                                 <label for="email" class="text-black">Correo </label>
-                                <input type="email" class="form-control" value="{{ $user['email'] }}" readonly>
+                                <input type="email" class="form-control" value="{{ $user['email'] }}" minlength="10" maxlength="50" readonly>
                             </div>
                         </div>
 
@@ -73,11 +85,11 @@
                                 <label for="direccion" class="text-black">Dirección <span
                                         class="text-danger">*</span></label>
                                 <input type="text" class="form-control" name="direccion" placeholder="Direccion 1212"
-                                    value="{{ $user['direccion'] }}" required>
+                                    value="{{ $user['direccion'] }}" minlength="5" maxlength="100" required>
                             </div>
                         </div>
 
-                        
+
 
                         <div class="form-group row">
                             <div class="col-md-6">
@@ -85,7 +97,8 @@
                                 <select class="form-control" id="ciudad" name="ciudad" onchange="updateComunas()"
                                     required>
                                     <option value="">Seleccione una ciudad</option>
-                                    <option value="arica" {{ $user['ciudad'] == 'arica' ? 'selected' : '' }}>Arica</option>
+                                    <option value="arica" {{ $user['ciudad'] == 'arica' ? 'selected' : '' }}>Arica
+                                    </option>
                                     <option value="iquique" {{ $user['ciudad'] == 'iquique' ? 'selected' : '' }}>Iquique
                                     </option>
                                     <option value="antofagasta" {{ $user['ciudad'] == 'antofagasta' ? 'selected' : '' }}>
@@ -108,22 +121,27 @@
                                         Concepción</option>
                                     <option value="temuco" {{ $user['ciudad'] == 'temuco' ? 'selected' : '' }}>Temuco
                                     </option>
-                                    <option value="valdivia" {{ $user['ciudad'] == 'valdivia' ? 'selected' : '' }}>Valdivia
+                                    <option value="valdivia" {{ $user['ciudad'] == 'valdivia' ? 'selected' : '' }}>
+                                        Valdivia
                                     </option>
-                                    <option value="puerto_montt" {{ $user['ciudad'] == 'puerto_montt' ? 'selected' : '' }}>
+                                    <option value="puerto_montt"
+                                        {{ $user['ciudad'] == 'puerto_montt' ? 'selected' : '' }}>
                                         Puerto Montt</option>
                                     <option value="coyhaique" {{ $user['ciudad'] == 'coyhaique' ? 'selected' : '' }}>
                                         Coyhaique</option>
-                                    <option value="punta_arenas" {{ $user['ciudad'] == 'punta_arenas' ? 'selected' : '' }}>
+                                    <option value="punta_arenas"
+                                        {{ $user['ciudad'] == 'punta_arenas' ? 'selected' : '' }}>
                                         Punta Arenas</option>
-                                    <option value="santiago" {{ $user['ciudad'] == 'santiago' ? 'selected' : '' }}>Santiago
+                                    <option value="santiago" {{ $user['ciudad'] == 'santiago' ? 'selected' : '' }}>
+                                        Santiago
                                     </option>
                                 </select>
 
 
                             </div>
                             <div class="col-md-6">
-                                <label for="comuna" class="text-black">Comuna <span class="text-danger">*</span></label>
+                                <label for="comuna" class="text-black">Comuna <span
+                                        class="text-danger">*</span></label>
                                 <select class="form-control" id="comuna" name="comuna" required>
                                     <option value="">Seleccione una comuna</option>
                                     <!-- Añade aquí las opciones de comuna -->
@@ -133,14 +151,17 @@
 
                         <div class="form-group row mb-5">
                             <div class="col-md-6">
-                                <label for="celular" class="text-black">Celular <span class="text-danger">*</span></label>
-                                <input type="text" class="form-control" name="celular" placeholder="99999999" oninput="this.value = this.value.replace(/[^0-9]/g, '');"
-                                    value="{{ $user['celular'] }}" required>
+                                <label for="celular" class="text-black">Celular <span
+                                        class="text-danger">*</span></label>
+                                <input type="text" class="form-control" name="celular" placeholder="99999999"
+                                    oninput="this.value = this.value.replace(/[^0-9]/g, '');"
+                                    value="{{ $user['celular'] }}" minlength="8" maxlength="8" required>
                             </div>
                             <div class="col-md-6">
                                 <label for="telefono" class="text-black">Telefono Fijo</label>
-                                <input type="text" class="form-control" name="telefono" placeholder="99999999" oninput="this.value = this.value.replace(/[^0-9]/g, '');"
-                                minlength="8" maxlength="8" value="{{ $user['telefono'] }}">
+                                <input type="text" class="form-control" name="telefono" placeholder="99999999"
+                                    oninput="this.value = this.value.replace(/[^0-9]/g, '');" minlength="8"
+                                    maxlength="8" value="{{ $user['telefono'] }}">
                             </div>
                         </div>
 
