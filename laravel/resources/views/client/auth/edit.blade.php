@@ -41,7 +41,7 @@
 
                         <div class="form-group row">
                             <div class="col-md-6">
-                                <label for="run" class="text-black">RUN </label>
+                                <label for="run" class="text-black">RUN <span class="text-danger">*</span></label>
                                 <input type="text" class="form-control" id="inputRun" name="run" placeholder="RUN"
                                     minlength="9" maxlength="12" required value="{{ $user['run'] }}">
                             </div>
