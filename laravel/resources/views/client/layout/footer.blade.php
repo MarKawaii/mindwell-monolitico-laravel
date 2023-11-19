@@ -66,7 +66,7 @@
 
                     <div class="col-6 col-sm-6 col-md-3">
                         <ul class="list-unstyled">
-                            <li><a href="{{ route('contactus') }}"> Contáctanos</a></li>
+                            <li><a href="{{ route('contactanos.index') }}"> Contáctanos</a></li>
                         </ul>
                     </div>
                 </div>

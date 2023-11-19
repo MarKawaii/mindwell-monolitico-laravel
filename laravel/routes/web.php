@@ -5,15 +5,16 @@ use App\Http\Controllers\Web\AuthController;
 use App\Http\Controllers\Web\HomeController;
 use App\Http\Controllers\Web\AdminHomeController;
 use App\Http\Controllers\Web\AuthGoogleController;
+use App\Http\Controllers\Web\ContactoController;
 use App\Http\Controllers\Web\InscripcionController;
 use App\Http\Controllers\Web\VistasEstaticasController;
 
 //contenido  visible para todo publico
 Route::resource('/', HomeController::class);
+Route::resource('/contactanos', ContactoController::class);
 // Vistas estaticas
 Route::get('/quienes_somos', [VistasEstaticasController::class, 'about'])->name('about'); 
 Route::get('/auto_ayuda', [VistasEstaticasController::class, 'autohelp'])->name('autohelp');
-Route::get('/contactanos', [VistasEstaticasController::class, 'contactus'])->name('contactus');
 Route::get('/centros_medicos', [VistasEstaticasController::class, 'mediccenter'])->name('mediccenter');
 Route::get('/servicios', [VistasEstaticasController::class, 'services'])->name('services');
 Route::get('/especialistas', [VistasEstaticasController::class, 'specialist'])->name('specialist');

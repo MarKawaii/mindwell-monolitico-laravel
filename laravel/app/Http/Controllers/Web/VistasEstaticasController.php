@@ -18,11 +18,6 @@ class VistasEstaticasController extends Controller
         return view('client.estaticas.autohelp');
     }
 
-    public function contactus(){
-
-        return view('client.estaticas.contactus');
-    }
-
     public function mediccenter(){
 
         return view('client.estaticas.mediccenter');
