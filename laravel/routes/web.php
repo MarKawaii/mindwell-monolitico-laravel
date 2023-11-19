@@ -31,7 +31,10 @@ Route::get('login/google/callback', [AuthGoogleController::class, 'handleGoogleC
 Route::group(['middleware' => 'auth'], function () {
     // permite cerrar la sesion no imporda desde donde uno inicio la sesion
     Route::get('/desconectar', [AuthGoogleController::class, 'logout'])->name('logout');
+
+    // perfil de usuario
     Route::get('perfil/edit/{id}', [AuthController::class, 'edit'])->name('perfil.edit');
+    Route::put('perfil/update/{id}', [AuthController::class, 'update'])->name('perfil.update');
 
 
     Route::resource('/admin', AdminHomeController::class);

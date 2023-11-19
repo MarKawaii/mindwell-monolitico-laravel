@@ -100,5 +100,41 @@ class AuthController extends Controller
         $user = User::find($id);
         return view('client.auth.edit', compact('user'));
     }
-   
+
+    public function update(Request $request, $id)
+    {
+        // Validación de datos
+        $validatedData = $request->validate([
+            'nombre' => 'required|max:255',
+            'direccion' => 'required',
+            // 'email' => 'required|email', // Si decides hacer el email editable
+            'ciudad' => 'required',
+            'comuna' => 'required',
+            'run' => 'required|min:9|max:12', // Ajusta según tus necesidades
+            'edad' => 'required|integer|min:18', // Ejemplo: solo mayores de 18 años
+            'celular' => 'required|digits:8', // Ejemplo: formato de celular chileno
+            // 'telefono' => 'nullable|digits:8' // Opcional y con formato de teléfono
+        ]);
+
+        try {
+            // Buscar el usuario por ID y actualizar
+            $user = User::findOrFail($id);
+            $user->name = $validatedData['nombre'];
+            $user->direccion = $validatedData['direccion'];
+            // $user->email = $validatedData['email']; // Si decides hacer el email editable
+            $user->ciudad = $validatedData['ciudad'];
+            $user->comuna = $validatedData['comuna'];
+            $user->run = $validatedData['run'];
+            $user->edad = $validatedData['edad'];
+            $user->celular = $validatedData['celular'];
+            $user->telefono = $validatedData['telefono'] ?? null; // Manejar campos opcionales
+            $user->save();
+
+            // Redirigir a alguna ruta con un mensaje de éxito
+            return redirect()->route('perfil.edit', $id)->with('success', 'Datos actualizados correctamente.');
+        } catch (\Exception $e) {
+            // Manejar la excepción, como un error al encontrar el usuario o al guardar los datos
+            return redirect()->back()->with('error', 'Error al actualizar los datos: ' . $e->getMessage());
+        }
+    }
 }

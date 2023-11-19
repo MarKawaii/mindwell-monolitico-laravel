@@ -9,9 +9,9 @@
         <div class="row justify-content-center">
             <div class="col-md-6 mb-5 mb-md-0">
                 <h2 class="h3 mb-3 text-black">Modificar Datos</h2>
-                <form>
-
-
+                <form action="{{ route('perfil.update', $user['id']) }}" method="post">
+                    @csrf
+                    @method('PUT')
                     <div class="p-3 p-lg-5 border bg-white">
                         <div class="form-group row">
                             <div class="col-md-12">
@@ -33,7 +33,7 @@
                             <div class="col-md-12">
                                 <label for="direccion" class="text-black">Dirección <span
                                         class="text-danger">*</span></label>
-                                <input type="text" class="form-control" name="direccion" placeholder="Direccion 1212"
+                                <input type="text" class="form-control" name="direccion" placeholder="Direccion 1212" value="{{ $user['direccion'] }}"
                                     required>
                             </div>
                         </div>
@@ -78,13 +78,13 @@
                         <div class="form-group row">
                             <div class="col-md-6">
                                 <label for="run" class="text-black">RUN </label>
-                                <input type="text" class="form-control" id="inputRun" name="run" placeholder="RUN"
-                                value="{{ old('run') }}" minlength="9" maxlength="12" required value="{{ $user['run'] }}">
+                                <input type="text" class="form-control" id="inputRun" name="run" placeholder="RUN" minlength="9" maxlength="12" required
+                                    value="{{ $user['run'] }}">
                             </div>
 
                             <div class="col-md-6">
                                 <label for="edad" class="text-black">Edad <span class="text-danger">*</span></label>
-                                <input type="text" class="form-control" name="edad" required>
+                                <input type="text" class="form-control" name="edad" value="{{ $user['edad'] }}" required>
                             </div>
                         </div>
 
@@ -111,25 +111,8 @@
         </div>
     </div>
 
-
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var inputRun = document.getElementById('inputRun');
-
-            inputRun.addEventListener('input', function() {
-                var value = inputRun.value;
-                value = value.replace(/[^0-9kK]+/g, '');
-                // Formatear con puntos y guion
-                value = value.replace(/^(\d{1,2})(\d{3})?(\d{3})?([0-9kK]?)$/, '$1.$2.$3-$4');
-
-                inputRun.value = value.toUpperCase(); // Convertir a mayúsculas
-            });
-        });
-    </script>
-
-
-
-    <script>
+        // manejar la funcion de las comunas
         function updateComunas() {
             var comunasPorCiudad = {
                 arica: ["Arica", "Camarones", "Putre"],
@@ -181,5 +164,19 @@
                 comunaSelect.appendChild(option);
             });
         }
+
+        // manejar el formateo de rut
+        document.addEventListener('DOMContentLoaded', function() {
+            var inputRun = document.getElementById('inputRun');
+
+            inputRun.addEventListener('input', function() {
+                var value = inputRun.value;
+                value = value.replace(/[^0-9kK]+/g, '');
+                // Formatear con puntos y guion
+                value = value.replace(/^(\d{1,2})(\d{3})?(\d{3})?([0-9kK]?)$/, '$1.$2.$3-$4');
+
+                inputRun.value = value.toUpperCase(); // Convertir a mayúsculas
+            });
+        });
     </script>
 @endsection
