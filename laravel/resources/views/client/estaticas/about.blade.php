@@ -10,8 +10,7 @@
             <div class="col-lg-5">
                 <div class="intro-excerpt">
                     <h1><span class="d-block">¿Quiénes somos?</span> </h1>
-                    <p class="mb-4">Cuidado especializado y compasivo en un entorno seguro y acogedor, para guiarle
-                        hacia su bienestar emocional.
+                    <p class="mb-4">Somos los más duros en Salud mental
                     </p>
                     {{-- <p><a href="{{ route('services') }}" class="btn btn-secondary me-2">Servicios</a><a href="{{ route('contactus') }}"
                             class="btn btn-white-outline">Contacto</a></p> --}}
@@ -32,7 +31,7 @@
 <div class="container mt-5">
     <div class="row">
         <div class="col-4">
-            <h2 class="mb-4 section-title">¿Qué es la salud mental?</h2>
+            <h2 class="mb-4 section-title">Somos estudiantes con ganas de ser unnos excelentes profesionales</h2>
                 <p class="mb-4">La salud mental incluye nuestro bienestar emocional, psicológico y social. Afecta la forma en que pensamos, 
                     sentimos y actuamos cuando enfrentamos la vida. También ayuda a determinar cómo manejamos el estrés, nos relacionamos con los demás
                     y tomamos decisiones. La salud mental es importante en todas las etapas de la vida, desde la niñez y la adolescencia hasta la adultez y la vejez. 
