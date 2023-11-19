@@ -1,9 +1,11 @@
 <?php
 
+use App\Http\Controllers\Web\AdminClientesController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Web\AuthController;
 use App\Http\Controllers\Web\HomeController;
 use App\Http\Controllers\Web\AdminHomeController;
+use App\Http\Controllers\Web\AdminTrabajadorController;
 use App\Http\Controllers\Web\AuthGoogleController;
 use App\Http\Controllers\Web\ContactoController;
 use App\Http\Controllers\Web\InscripcionController;
@@ -43,6 +45,9 @@ Route::group(['middleware' => 'auth'], function () {
     Route::put('perfil/update/{id}', [AuthController::class, 'update'])->name('perfil.update');
 
 
+    // opciones del adminitrador o trabajador
     Route::resource('/admin', AdminHomeController::class);
+    Route::resource('/trabajador', AdminTrabajadorController::class);
+    Route::resource('/cliente', AdminClientesController::class);
 
 });

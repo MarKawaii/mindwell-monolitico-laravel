@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link rel="shortcut icon" href="img/icons/icon-48x48.png" />
 <link rel="canonical" href="https://demo-basic.adminkit.io/" />
-<title>MarKawaii QHH</title>
+<title>MIND-WELL | DASHBOARD</title>
 
 <link href="{{ asset('libs/admin/css/app.css') }}" rel="stylesheet">
 <link href="{{ asset('libs/admin/css/custom.css') }}" rel="stylesheet">
