@@ -77,7 +77,7 @@ class AuthGoogleController extends Controller
         // Verificar si falta alguno de los campos: ciudad, comuna, edad o dirección
         if (empty($userToLogin->ciudad) || empty($userToLogin->comuna) || empty($userToLogin->edad) || empty($userToLogin->direccion)) {
             return redirect()->route('perfil.edit', $userToLogin->id)
-                ->with('info', 'Por favor completa tu información de perfil (ciudad, comuna, edad, dirección).');
+                ->with('info', 'Por favor completa tu información de perfil.');
         }
 
         // Mensaje de bienvenida personalizado según si el usuario es nuevo o no
