@@ -78,8 +78,10 @@
                         <div class="form-group row">
                             <div class="col-md-6">
                                 <label for="run" class="text-black">RUN </label>
-                                <input type="text" class="form-control" value="{{ $user['run'] }}" readonly>
+                                <input type="text" class="form-control" id="inputRun" name="run" placeholder="RUN"
+                                value="{{ old('run') }}" minlength="9" maxlength="12" required value="{{ $user['run'] }}">
                             </div>
+
                             <div class="col-md-6">
                                 <label for="edad" class="text-black">Edad <span class="text-danger">*</span></label>
                                 <input type="text" class="form-control" name="edad" required>
@@ -106,10 +108,24 @@
                 </form>
             </div>
 
-
-
         </div>
     </div>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var inputRun = document.getElementById('inputRun');
+
+            inputRun.addEventListener('input', function() {
+                var value = inputRun.value;
+                value = value.replace(/[^0-9kK]+/g, '');
+                // Formatear con puntos y guion
+                value = value.replace(/^(\d{1,2})(\d{3})?(\d{3})?([0-9kK]?)$/, '$1.$2.$3-$4');
+
+                inputRun.value = value.toUpperCase(); // Convertir a mayúsculas
+            });
+        });
+    </script>
 
 
 
