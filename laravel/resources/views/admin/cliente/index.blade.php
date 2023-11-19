@@ -18,6 +18,7 @@
                                 <tr>
                                     <th>ID</th>
                                     <th>EMAIL</th>
+                                    <th>RUN</th>
                                     <th>EDAD</th>
                                     <th>CIUDAD</th>
                                     <th>COMUNA</th>
@@ -30,6 +31,7 @@
                                     <tr>
                                         <td>{{ $cliente->id }}</td>
                                         <td>{{ $cliente->email }}</td>
+                                        <td>{{ $cliente->run }}</td>
                                         <td>{{ $cliente->edad ?  $cliente->edad : 'N/A'}}</td>
                                         <td>{{ $cliente->ciudad ?  $cliente->ciudad : 'N/A'}}</td>
                                         <td>{{ $cliente->comuna ?  $cliente->comuna : 'N/A'}}</td>
