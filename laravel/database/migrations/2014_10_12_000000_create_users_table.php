@@ -24,6 +24,12 @@ return new class extends Migration
             $table->string('run')->unique()->nullable();
             $table->integer('telefono')->nullable();
             $table->integer('celular')->nullable();
+            $table->integer('edad')->nullable();
+
+            $table->string('direccion')->unique()->nullable();
+            $table->string('ciudad')->unique()->nullable();
+            $table->string('comuna')->unique()->nullable();
+
 
             $table->rememberToken();
             $table->timestamps();
