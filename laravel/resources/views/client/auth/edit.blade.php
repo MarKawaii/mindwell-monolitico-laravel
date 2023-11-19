@@ -17,7 +17,7 @@
                             <div class="col-md-12">
                                 <label for="nombre" class="text-black">Nombre Completo <span
                                         class="text-danger">*</span></label>
-                                <input type="text" class="form-control" name="nombre" value="{{ $user['name'] }}"
+                                <input type="text" class="form-control" name="nombre" value="{{ $user['name'] }}" oninput="this.value=this.value.replace(/[^a-zA-Z ]/g, '')"
                                     required>
                             </div>
                         </div>
@@ -33,8 +33,8 @@
                             <div class="col-md-12">
                                 <label for="direccion" class="text-black">Dirección <span
                                         class="text-danger">*</span></label>
-                                <input type="text" class="form-control" name="direccion" placeholder="Direccion 1212" value="{{ $user['direccion'] }}"
-                                    required>
+                                <input type="text" class="form-control" name="direccion" placeholder="Direccion 1212"
+                                    value="{{ $user['direccion'] }}" required>
                             </div>
                         </div>
 
@@ -44,24 +44,41 @@
                                 <select class="form-control" id="ciudad" name="ciudad" onchange="updateComunas()"
                                     required>
                                     <option value="">Seleccione una ciudad</option>
-                                    <option value="arica">Arica</option>
-                                    <option value="iquique">Iquique</option>
-                                    <option value="antofagasta">Antofagasta</option>
-                                    <option value="copiapo">Copiapó</option>
-                                    <option value="la_serena">La Serena</option>
-                                    <option value="coquimbo">Coquimbo</option>
-                                    <option value="valparaiso">Valparaíso</option>
-                                    <option value="viña_del_mar">Viña del Mar</option>
-                                    <option value="rancagua">Rancagua</option>
-                                    <option value="talca">Talca</option>
-                                    <option value="concepcion">Concepción</option>
-                                    <option value="temuco">Temuco</option>
-                                    <option value="valdivia">Valdivia</option>
-                                    <option value="puerto_montt">Puerto Montt</option>
-                                    <option value="coyhaique">Coyhaique</option>
-                                    <option value="punta_arenas">Punta Arenas</option>
-                                    <option value="santiago">Santiago</option>
+                                    <option value="arica" {{ $user['ciudad'] == 'arica' ? 'selected' : '' }}>Arica</option>
+                                    <option value="iquique" {{ $user['ciudad'] == 'iquique' ? 'selected' : '' }}>Iquique
+                                    </option>
+                                    <option value="antofagasta" {{ $user['ciudad'] == 'antofagasta' ? 'selected' : '' }}>
+                                        Antofagasta</option>
+                                    <option value="copiapo" {{ $user['ciudad'] == 'copiapo' ? 'selected' : '' }}>Copiapó
+                                    </option>
+                                    <option value="la_serena" {{ $user['ciudad'] == 'la_serena' ? 'selected' : '' }}>La
+                                        Serena</option>
+                                    <option value="coquimbo" {{ $user['ciudad'] == 'coquimbo' ? 'selected' : '' }}>Coquimbo
+                                    </option>
+                                    <option value="valparaiso" {{ $user['ciudad'] == 'valparaiso' ? 'selected' : '' }}>
+                                        Valparaíso</option>
+                                    <option value="viña_del_mar" {{ $user['ciudad'] == 'viña_del_mar' ? 'selected' : '' }}>
+                                        Viña del Mar</option>
+                                    <option value="rancagua" {{ $user['ciudad'] == 'rancagua' ? 'selected' : '' }}>Rancagua
+                                    </option>
+                                    <option value="talca" {{ $user['ciudad'] == 'talca' ? 'selected' : '' }}>Talca
+                                    </option>
+                                    <option value="concepcion" {{ $user['ciudad'] == 'concepcion' ? 'selected' : '' }}>
+                                        Concepción</option>
+                                    <option value="temuco" {{ $user['ciudad'] == 'temuco' ? 'selected' : '' }}>Temuco
+                                    </option>
+                                    <option value="valdivia" {{ $user['ciudad'] == 'valdivia' ? 'selected' : '' }}>Valdivia
+                                    </option>
+                                    <option value="puerto_montt" {{ $user['ciudad'] == 'puerto_montt' ? 'selected' : '' }}>
+                                        Puerto Montt</option>
+                                    <option value="coyhaique" {{ $user['ciudad'] == 'coyhaique' ? 'selected' : '' }}>
+                                        Coyhaique</option>
+                                    <option value="punta_arenas" {{ $user['ciudad'] == 'punta_arenas' ? 'selected' : '' }}>
+                                        Punta Arenas</option>
+                                    <option value="santiago" {{ $user['ciudad'] == 'santiago' ? 'selected' : '' }}>Santiago
+                                    </option>
                                 </select>
+
 
                             </div>
                             <div class="col-md-6">
@@ -78,26 +95,27 @@
                         <div class="form-group row">
                             <div class="col-md-6">
                                 <label for="run" class="text-black">RUN </label>
-                                <input type="text" class="form-control" id="inputRun" name="run" placeholder="RUN" minlength="9" maxlength="12" required
-                                    value="{{ $user['run'] }}">
+                                <input type="text" class="form-control" id="inputRun" name="run" placeholder="RUN"
+                                    minlength="9" maxlength="12" required value="{{ $user['run'] }}">
                             </div>
 
                             <div class="col-md-6">
                                 <label for="edad" class="text-black">Edad <span class="text-danger">*</span></label>
-                                <input type="text" class="form-control" name="edad" value="{{ $user['edad'] }}" required>
+                                <input type="text" class="form-control" name="edad" value="{{ $user['edad'] }}"
+                                    required>
                             </div>
                         </div>
 
                         <div class="form-group row mb-5">
                             <div class="col-md-6">
                                 <label for="celular" class="text-black">Celular <span class="text-danger">*</span></label>
-                                <input type="text" class="form-control" name="celular" placeholder="99999999"
+                                <input type="text" class="form-control" name="celular" placeholder="99999999" oninput="this.value = this.value.replace(/[^0-9]/g, '');"
                                     value="{{ $user['celular'] }}" required>
                             </div>
                             <div class="col-md-6">
                                 <label for="telefono" class="text-black">Telefono Fijo</label>
-                                <input type="text" class="form-control" name="telefono" placeholder="99999999"
-                                    value="{{ $user['telefono'] }}">
+                                <input type="text" class="form-control" name="telefono" placeholder="99999999" oninput="this.value = this.value.replace(/[^0-9]/g, '');"
+                                minlength="8" maxlength="8" value="{{ $user['telefono'] }}">
                             </div>
                         </div>
 
@@ -112,8 +130,8 @@
     </div>
 
     <script>
-        // manejar la funcion de las comunas
-        function updateComunas() {
+        // manejar la función de las comunas
+        function updateComunas(userComuna) {
             var comunasPorCiudad = {
                 arica: ["Arica", "Camarones", "Putre"],
                 iquique: ["Iquique", "Alto Hospicio", "Pica"],
@@ -162,6 +180,11 @@
                 option.value = comuna.toLowerCase().replace(/\s+/g, '_');
                 option.text = comuna;
                 comunaSelect.appendChild(option);
+
+                // Seleccionar la comuna del usuario
+                if (userComuna && userComuna.toLowerCase().replace(/\s+/g, '_') === option.value) {
+                    option.selected = true;
+                }
             });
         }
 
@@ -177,6 +200,9 @@
 
                 inputRun.value = value.toUpperCase(); // Convertir a mayúsculas
             });
+
+            // Actualiza las comunas cuando se carga la página
+            updateComunas("{{ $user['comuna'] }}"); // Reemplaza esto con la comuna del usuario
         });
     </script>
 @endsection

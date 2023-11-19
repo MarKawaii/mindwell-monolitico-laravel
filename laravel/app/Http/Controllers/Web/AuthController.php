@@ -113,7 +113,7 @@ class AuthController extends Controller
             'run' => 'required|min:9|max:12', // Ajusta según tus necesidades
             'edad' => 'required|integer|min:18', // Ejemplo: solo mayores de 18 años
             'celular' => 'required|digits:8', // Ejemplo: formato de celular chileno
-            // 'telefono' => 'nullable|digits:8' // Opcional y con formato de teléfono
+            'telefono' => 'nullable|digits:8' // Opcional y con formato de teléfono
         ]);
 
         try {
@@ -127,7 +127,7 @@ class AuthController extends Controller
             $user->run = $validatedData['run'];
             $user->edad = $validatedData['edad'];
             $user->celular = $validatedData['celular'];
-            $user->telefono = $validatedData['telefono'] ?? null; // Manejar campos opcionales
+            $user->telefono = $validatedData['telefono'];
             $user->save();
 
             // Redirigir a alguna ruta con un mensaje de éxito
