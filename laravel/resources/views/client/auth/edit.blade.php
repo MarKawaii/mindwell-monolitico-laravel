@@ -81,7 +81,7 @@
 
                         <div class="form-group row">
                             <div class="col-md-6">
-                                <label for="ciudad" class="text-black">Ciudad</label>
+                                <label for="ciudad" class="text-black">Ciudad <span class="text-danger">*</span></label>
                                 <select class="form-control" id="ciudad" name="ciudad" onchange="updateComunas()"
                                     required>
                                     <option value="">Seleccione una ciudad</option>
