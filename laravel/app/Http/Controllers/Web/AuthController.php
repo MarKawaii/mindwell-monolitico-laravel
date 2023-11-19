@@ -97,7 +97,8 @@ class AuthController extends Controller
 
     public function edit(string $id)
     {
-        return view('client.auth.edit');
+        $user = User::find($id);
+        return view('client.auth.edit', compact('user'));
     }
    
 }
