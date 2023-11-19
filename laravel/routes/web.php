@@ -5,6 +5,7 @@ use App\Http\Controllers\Web\AuthController;
 use App\Http\Controllers\Web\HomeController;
 use App\Http\Controllers\Web\AdminHomeController;
 use App\Http\Controllers\Web\AuthGoogleController;
+use App\Http\Controllers\Web\InscripcionController;
 use App\Http\Controllers\Web\VistasEstaticasController;
 
 //contenido  visible para todo publico
@@ -25,6 +26,10 @@ Route::post('register/store', [AuthController::class, 'store'])->name('register.
 // Login y registro de google
 Route::get('login/google', [AuthGoogleController::class, 'redirectToGoogle'])->name('google.login');
 Route::get('login/google/callback', [AuthGoogleController::class, 'handleGoogleCallback'])->name('google.callback');
+
+// subcripccion al boletin
+Route::post('inscripcion/store', [InscripcionController::class, 'store'])->name('inscripcion.store');
+
 
 
 // Informacion visible solo para usuarios que iniciaron sesion
