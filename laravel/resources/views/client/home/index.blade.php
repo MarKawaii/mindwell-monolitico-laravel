@@ -63,7 +63,7 @@
                 <!-- Start Column 3 -->
                 <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
                     <a class="product-item" href="cart.html">
-                        <img src="libs/client/images/image6.jpg" class="img-fluid product-thumbnail">
+                        <img src="libs/client/images/brain.jpg" class="img-fluid product-thumbnail">
                         <h3 class="product-title">Sana</h3>
                         
 
@@ -77,7 +77,7 @@
                 <!-- Start Column 4 -->
                 <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
                     <a class="product-item" href="cart.html">
-                        <img src="libs/client/images/image3.jpg" class="img-fluid product-thumbnail">
+                        <img src="libs/client/images/rompe.jpg" class="img-fluid product-thumbnail">
                         <h3 class="product-title">Reconstruye</h3>
                         
 
@@ -185,7 +185,7 @@
                         <li><strong>Mindfulness:</strong> Dedica tiempo a la atención plena. Medita, observa conscientemente o presta atención plena a tus actividades diarias. Mejora la concentración.</li>
 
                     </ul>
-                    <p><a herf="#" class="btn">Explore</a></p>
+                    <p class="mb-0"><a href="https://www.healthline.com/health/es/como-quitar-el-estres" class="more dark">    Conoce más tips<span class="icon-arrow_forward"></span></a></p>
                 </div>
             </div>
         </div>

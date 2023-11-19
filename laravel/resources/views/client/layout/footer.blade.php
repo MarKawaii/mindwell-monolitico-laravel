@@ -88,7 +88,7 @@
                        
                     </p>
                     <p class="mb-2 text-center text-lg-start">
-                        Diseñado con amor por nuestro equipo en Duoc UC 
+                        Diseñado con amor por nuestro equipo en Duoc UC y en colaboración con Ignacio Véliz, compañero y amigo de Duoc UC
                     </p>
                 </div>
 
