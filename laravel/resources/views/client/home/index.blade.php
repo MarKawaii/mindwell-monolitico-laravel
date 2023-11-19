@@ -18,10 +18,10 @@
                 </div>
 
                 <div class="col-lg-7">
-                    <div class="hero-img-wrap">
+                    <div class="hero-img-wrap" style="margin-top: -60px;">
                         <!-- Asegúrate de reemplazar 'src' con la ruta correcta a la imagen que deseas mostrar -->
-                        <img src="libs/client/images/um-medico-jovem-e-bonito-em-branco-removebg-preview.png"
-                            class="img-fluid" alt="Equipo de Mind-Well">
+                        <img src="libs/client/images/mental.png"
+                            class="img-fluid" alt="Equipo de Mind-Well" style="width: 82%">
                     </div>
                 </div>
             </div>
