@@ -18,7 +18,7 @@
                                 <label for="nombre" class="text-black">Nombre Completo <span
                                         class="text-danger">*</span></label>
                                 <input type="text" class="form-control" name="nombre" value="{{ $user['name'] }}" oninput="this.value=this.value.replace(/[^a-zA-Z ]/g, '')"
-                                    required>
+                                    maxlength="30" required>
                             </div>
                         </div>
 
