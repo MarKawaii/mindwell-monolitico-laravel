@@ -4,29 +4,31 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Web\AuthController;
 use App\Http\Controllers\Web\HomeController;
 use App\Http\Controllers\Web\AdminHomeController;
+use App\Http\Controllers\Web\AuthGoogleController;
 use App\Http\Controllers\Web\VistasEstaticasController;
 
 //contenido  visible para todo publico
 Route::resource('/', HomeController::class);
-
 // Vistas estaticas
 Route::get('/quienes_somos', [VistasEstaticasController::class, 'about'])->name('about'); 
 Route::get('/auto_ayuda', [VistasEstaticasController::class, 'autohelp'])->name('autohelp');
-
 Route::get('/contactanos', [VistasEstaticasController::class, 'contactus'])->name('contactus');
 Route::get('/centros_medicos', [VistasEstaticasController::class, 'mediccenter'])->name('mediccenter');
 Route::get('/servicios', [VistasEstaticasController::class, 'services'])->name('services');
 Route::get('/especialistas', [VistasEstaticasController::class, 'specialist'])->name('specialist');
 
-// login por email registro y recuprar contraseña
-Route::post('login', [AuthController::class, 'authenticate'])->name('login');
-Route::get('register', [AuthController::class, 'register'])->name('register');
-Route::post('crear-usuario', [AuthController::class, 'crearUsuario'])->name('crear.usuario');
-
+// Login y registro manual
+Route::post('authenticate', [AuthController::class, 'authenticate'])->name('login');
+Route::get('register', [AuthController::class, 'create'])->name('register');
+Route::post('register-post', [AuthController::class, 'store'])->name('register.post');
 
 // Login y registro sso
-Route::get('login/google', [AuthController::class, 'redirectToGoogle'])->name('google.login');
-Route::get('login/google/callback', [AuthController::class, 'handleGoogleCallback'])->name('google.callback');
+Route::get('login/google', [AuthGoogleController::class, 'redirectToGoogle'])->name('google.login');
+Route::get('login/google/callback', [AuthGoogleController::class, 'handleGoogleCallback'])->name('google.callback');
+
+
+
+
 
 // Informacion visible solo para usuarios que iniciaron sesion
 Route::group(['middleware' => 'auth'], function () {
