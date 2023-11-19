@@ -20,19 +20,19 @@ Route::get('/especialistas', [VistasEstaticasController::class, 'specialist'])->
 // Login y registro manual
 Route::post('authenticate', [AuthController::class, 'authenticate'])->name('login');
 Route::get('register', [AuthController::class, 'create'])->name('register');
-Route::post('register-post', [AuthController::class, 'store'])->name('register.post');
+Route::post('register/store', [AuthController::class, 'store'])->name('register.store');
 
-// Login y registro sso
+// Login y registro de google
 Route::get('login/google', [AuthGoogleController::class, 'redirectToGoogle'])->name('google.login');
 Route::get('login/google/callback', [AuthGoogleController::class, 'handleGoogleCallback'])->name('google.callback');
 
 
-
-
-
 // Informacion visible solo para usuarios que iniciaron sesion
 Route::group(['middleware' => 'auth'], function () {
-    Route::get('/desconectar', [AuthController::class, 'logout'])->name('logout');
+    // permite cerrar la sesion no imporda desde donde uno inicio la sesion
+    Route::get('/desconectar', [AuthGoogleController::class, 'logout'])->name('logout');
+    Route::get('perfil/edit/{id}', [AuthController::class, 'edit'])->name('perfil.edit');
+
 
     Route::resource('/admin', AdminHomeController::class);
 

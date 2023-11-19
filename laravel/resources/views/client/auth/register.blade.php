@@ -37,7 +37,7 @@
 <body>
     <div class="container">
         <h2>Crear una cuenta</h2>
-        <form action="{{ route('register.post') }}" method="post">
+        <form action="{{ route('register.store') }}" method="post">
             @csrf
             <div class="row mb-2">
                 <div class="col-md-6">

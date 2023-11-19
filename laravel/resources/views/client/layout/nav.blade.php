@@ -46,10 +46,11 @@
                 @if (Auth::check())
                     <!-- Ítems autenticados... -->
                     <li>
-                        <a class="nav-link" href="aque va la ruta user edit">
+                        <a class="nav-link" href="{{ route('perfil.edit', auth()->user()->id) }}">
                             <i class="fa-solid fa-user fa-lg" aria-hidden="true"></i>
                         </a>
                     </li>
+                    
 
 
                     <li>

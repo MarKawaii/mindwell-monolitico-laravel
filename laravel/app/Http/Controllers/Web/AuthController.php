@@ -94,5 +94,10 @@ class AuthController extends Controller
 
         return redirect()->route('index')->with('success', 'Cuenta creada con éxito');
     }
+
+    public function edit(string $id)
+    {
+        return view('client.auth.edit');
+    }
    
 }
