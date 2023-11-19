@@ -35,7 +35,7 @@
 
                             <div class="col-md-6">
                                 <label for="fecha_nacimiento" class="text-black">Fecha de Nacimiento <span class="text-danger">*</span></label>
-                                <input type="date" name="fecha_nacimiento" class="form-control" value="{{ $user['fecha_nacimiento'] }}">
+                                <input type="date" name="fecha_nacimiento" class="form-control" value="{{ $user['fecha_nacimiento'] }}" required>
                             </div>
                         </div>
 
