@@ -22,23 +22,55 @@ class AuthController extends Controller
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
 
-            // Redirecciona a la vista de inicio de sesión después de una autenticación exitosa
-            return redirect()->route('index');
+            // Obtener el usuario autenticado
+            $user = Auth::user();
+
+            // Comprobar el dominio del correo electrónico
+            $emailDomain = substr(strrchr($user->email, "@"), 1);
+            if ($emailDomain == 'mindwell.cl' || $emailDomain == 'mindwell.com') {
+                // Redirigir a la ruta de administración con un mensaje
+                return redirect()->route('admin.index')->with('info', 'Bienvenido al panel de administración.');
+            }
+
+            // Verificar si falta alguno de los campos: ciudad, comuna, edad o dirección
+            if (empty($user->ciudad) || empty($user->comuna) || empty($user->edad) || empty($user->direccion)) {
+                // Redirigir a la vista de edición de perfil con un mensaje
+                return redirect()->route('perfil.edit', $user->id)
+                    ->with('info', 'Por favor completa tu información de perfil.');
+            }
+
+            // Redirecciona a la vista de inicio con un mensaje de bienvenida
+            return redirect()->route('index')->with('info', 'Bienvenido nuevamente a la plataforma!');
         }
 
+        // En caso de credenciales incorrectas, regresar con un mensaje de error
         return back()->withErrors([
             'email' => 'Las credenciales proporcionadas no coinciden con nuestros registros.',
-        ]);
+        ])->with('error', 'Error en el inicio de sesión, por favor verifica tus credenciales.');
     }
+
+
+
 
     public function create()
     {
+        // Verifica si el usuario está autenticado
+        if (Auth::check()) {
+            // Redirigir al usuario a la página de inicio o a alguna otra página
+            return redirect()->route('index')->with('info', 'Ya estás registrado y autenticado.');
+        }
+
         return view('client.auth.register');
     }
 
 
     public function store(Request $request)
     {
+        if (Auth::check()) {
+            // Redirigir al usuario a la página de inicio o a alguna otra página
+            return redirect()->route('index')->with('info', 'Ya estás registrado y autenticado.');
+        }
+
         // Lista de dominios permitidos
         $dominiosPermitidos = [
             'gmail.com', 'gmail.cl', 'outlok.com', 'hotmail.cl',
@@ -97,12 +129,25 @@ class AuthController extends Controller
 
     public function edit(string $id)
     {
+        $authUser = Auth::user();
+        // Verifica si el ID del usuario autenticado coincide con el ID pasado
+        if ($authUser->id != $id) {
+            return redirect()->route('index')->with('error', 'No tiene permiso para editar este perfil.');
+        }
+
         $user = User::find($id);
         return view('client.auth.edit', compact('user'));
     }
 
     public function update(Request $request, $id)
     {
+
+        $authUser = Auth::user();
+        // Verifica si el ID del usuario autenticado coincide con el ID pasado
+        if ($authUser->id != $id) {
+            return redirect()->route('index')->with('error', 'No tiene permiso para editar este perfil.');
+        }
+
         // Validación de datos
         $validatedData = $request->validate([
             'nombre' => 'required|max:255',

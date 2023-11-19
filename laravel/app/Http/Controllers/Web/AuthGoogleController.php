@@ -40,34 +40,50 @@ class AuthGoogleController extends Controller
     {
         $googleUser = Socialite::driver('google')->user();
         $existingUser = User::where('email', $googleUser->email)->first();
+        $isNewUser = false; // Bandera para identificar si el usuario es nuevo
 
         if (!$existingUser) {
+            // Crear un nuevo usuario si no existe
             $newUser = new User();
-            // Inicio datos basicos de usuario
             $newUser->name = $googleUser->name;
             $newUser->email = $googleUser->email;
             $newUser->google_id = $googleUser->id;
-            // fin datos basicos del usuario
 
-            // Validamos la longitud de la URL de la foto.
-            if (strlen($googleUser->avatar_original) <= 255) { // Asumiendo que el límite es 255.
+            // Asignar una foto si la longitud de la URL es adecuada
+            if (strlen($googleUser->avatar_original) <= 255) {
                 $newUser->photo = $googleUser->avatar_original;
-            } else {
-                $newUser->photo = null; // Si es demasiado larga, asignamos null.
             }
 
             $newUser->email_verified_at = now();
-            // se crea un contraseña por defecto encriptada
-            $newUser->password = Hash::make("asdasdasdasd");
-            $newUser->status = true; // despues todos se crean en 0s
+            $newUser->password = Hash::make("default_password"); // Considera cambiar esto por algo más seguro
+            $newUser->status = true;
 
             $newUser->save();
-
-            Auth::login($newUser, true);
-            return redirect()->route('index');
+            $userToLogin = $newUser;
+            $isNewUser = true; // El usuario es nuevo
+        } else {
+            $userToLogin = $existingUser;
         }
 
-        Auth::login($existingUser, true);
-        return redirect()->route('index'); // Corregí un pequeño typo aquí también.
+        // Autenticar al usuario
+        Auth::login($userToLogin, true);
+
+        // Comprobar el dominio del correo electrónico
+        $emailDomain = substr(strrchr($userToLogin->email, "@"), 1);
+        if ($emailDomain == 'mindwell.cl' || $emailDomain == 'mindwell.com') {
+            return redirect()->route('admin.index');
+        }
+
+        // Verificar si falta alguno de los campos: ciudad, comuna, edad o dirección
+        if (empty($userToLogin->ciudad) || empty($userToLogin->comuna) || empty($userToLogin->edad) || empty($userToLogin->direccion)) {
+            return redirect()->route('perfil.edit', $userToLogin->id)
+                ->with('info', 'Por favor completa tu información de perfil (ciudad, comuna, edad, dirección).');
+        }
+
+        // Mensaje de bienvenida personalizado según si el usuario es nuevo o no
+        $welcomeMessage = $isNewUser ? 'Bienvenido a la plataforma!' : 'Bienvenido nuevamente a la plataforma!';
+
+        // Redireccionar a la página de inicio con un mensaje personalizado
+        return redirect()->route('index')->with('info', $welcomeMessage);
     }
 }
