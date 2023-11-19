@@ -31,7 +31,7 @@
                                     <tr>
                                         <td>{{ $cliente->id }}</td>
                                         <td>{{ $cliente->email }}</td>
-                                        <td>{{ $cliente->run }}</td>
+                                        <td>{{ $cliente->run ?  $cliente->run : 'N/A'}}</td>
                                         <td>{{ $cliente->edad ?  $cliente->edad : 'N/A'}}</td>
                                         <td>{{ $cliente->ciudad ?  $cliente->ciudad : 'N/A'}}</td>
                                         <td>{{ $cliente->comuna ?  $cliente->comuna : 'N/A'}}</td>
