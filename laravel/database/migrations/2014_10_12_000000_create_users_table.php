@@ -24,7 +24,9 @@ return new class extends Migration
             $table->string('run')->unique()->nullable();
             $table->integer('telefono')->nullable();
             $table->integer('celular')->nullable();
-            $table->integer('edad')->nullable();
+            $table->date('fecha_nacimiento')->nullable();
+            $table->string('genero')->nullable();
+            $table->string('estado_civil')->nullable();
 
             $table->string('direccion')->unique()->nullable();
             $table->string('ciudad')->unique()->nullable();

@@ -23,6 +23,45 @@
                         </div>
 
                         <div class="form-group row">
+                            <div class="col-md-6">
+                                <label for="Genero" class="text-black">Genero <span class="text-danger">*</span></label>
+                                <select name="genero" class="form-control" required>
+                                    <option value="" disabled>Seleccione un género</option>
+                                    <option value="Masculino" {{ $user->genero == 'Masculino' ? 'selected' : '' }}>Masculino</option>
+                                    <option value="Femenino" {{ $user->genero == 'Femenino' ? 'selected' : '' }}>Femenino</option>
+                                    <option value="Otros" {{ $user->genero == 'Otros' ? 'selected' : '' }}>Otros</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="fecha_nacimiento" class="text-black">Fecha de Nacimiento <span class="text-danger">*</span></label>
+                                <input type="date" name="fecha_nacimiento" class="form-control" value="{{ $user['fecha_nacimiento'] }}">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                                <label for="run" class="text-black">RUN </label>
+                                <input type="text" class="form-control" id="inputRun" name="run" placeholder="RUN"
+                                    minlength="9" maxlength="12" required value="{{ $user['run'] }}">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="estadoCivil" class="text-black">Estado Civil <span class="text-danger">*</span></label>
+                                <select class="form-control" name="estadoCivil" required>
+                                    <option value="" disabled>Seleccione su estado civil</option>
+                                    <option value="soltero" {{ $user->estado_civil == 'soltero' ? 'selected' : '' }}>Soltero/a</option>
+                                    <option value="casado" {{ $user->estado_civil == 'casado' ? 'selected' : '' }}>Casado/a</option>
+                                    <option value="divorciado" {{ $user->estado_civil == 'divorciado' ? 'selected' : '' }}>Divorciado/a</option>
+                                    <option value="viudo" {{ $user->estado_civil == 'viudo' ? 'selected' : '' }}>Viudo/a</option>
+                                    <option value="unionLibre" {{ $user->estado_civil == 'unionLibre' ? 'selected' : '' }}>Unión libre</option>
+                                    <option value="separado" {{ $user->estado_civil == 'separado' ? 'selected' : '' }}>Separado/a</option>
+                                </select>
+                            </div>
+                            
+                        </div>
+
+                        <div class="form-group row">
                             <div class="col-md-12">
                                 <label for="email" class="text-black">Correo </label>
                                 <input type="email" class="form-control" value="{{ $user['email'] }}" readonly>
@@ -37,6 +76,8 @@
                                     value="{{ $user['direccion'] }}" required>
                             </div>
                         </div>
+
+                        
 
                         <div class="form-group row">
                             <div class="col-md-6">
@@ -87,22 +128,6 @@
                                     <option value="">Seleccione una comuna</option>
                                     <!-- Añade aquí las opciones de comuna -->
                                 </select>
-                            </div>
-                        </div>
-
-
-
-                        <div class="form-group row">
-                            <div class="col-md-6">
-                                <label for="run" class="text-black">RUN </label>
-                                <input type="text" class="form-control" id="inputRun" name="run" placeholder="RUN"
-                                    minlength="9" maxlength="12" required value="{{ $user['run'] }}">
-                            </div>
-
-                            <div class="col-md-6">
-                                <label for="edad" class="text-black">Edad <span class="text-danger">*</span></label>
-                                <input type="text" class="form-control" name="edad" value="{{ $user['edad'] }}"
-                                    required>
                             </div>
                         </div>
 

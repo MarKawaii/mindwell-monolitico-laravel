@@ -152,11 +152,12 @@ class AuthController extends Controller
         $validatedData = $request->validate([
             'nombre' => 'required|max:255',
             'direccion' => 'required',
-            // 'email' => 'required|email', // Si decides hacer el email editable
             'ciudad' => 'required',
             'comuna' => 'required',
             'run' => 'required|min:9|max:12', // Ajusta según tus necesidades
-            'edad' => 'required|integer|min:18', // Ejemplo: solo mayores de 18 años
+            'fecha_nacimiento' => 'required|date', // Asegúrate de que sea una fecha válida
+            'genero' => 'required', // Asegúrate de que se haya seleccionado un género
+            'estadoCivil' => 'required', // Asegúrate de que se haya seleccionado un estado civil
             'celular' => 'required|digits:8', // Ejemplo: formato de celular chileno
             'telefono' => 'nullable|digits:8' // Opcional y con formato de teléfono
         ]);
@@ -166,15 +167,16 @@ class AuthController extends Controller
             $user = User::findOrFail($id);
             $user->name = $validatedData['nombre'];
             $user->direccion = $validatedData['direccion'];
-            // $user->email = $validatedData['email']; // Si decides hacer el email editable
             $user->ciudad = $validatedData['ciudad'];
             $user->comuna = $validatedData['comuna'];
             $user->run = $validatedData['run'];
-            $user->edad = $validatedData['edad'];
+            $user->fecha_nacimiento = $validatedData['fecha_nacimiento']; // Asegúrate de que tu modelo soporte este campo
+            $user->genero = $validatedData['genero']; // Asegúrate de que tu modelo soporte este campo
+            $user->estado_civil = $validatedData['estadoCivil']; // Asegúrate de que tu modelo soporte este campo
             $user->celular = $validatedData['celular'];
             $user->telefono = $validatedData['telefono'];
             $user->save();
-
+    
             // Redirigir a alguna ruta con un mensaje de éxito
             return redirect()->route('perfil.edit', $id)->with('success', 'Datos actualizados correctamente.');
         } catch (\Exception $e) {
