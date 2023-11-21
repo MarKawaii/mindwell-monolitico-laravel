@@ -87,7 +87,7 @@
 
             <div class="col-lg-5">
                 <div class="img-wrap">
-                    <img src="libs/client/images/image5.jpg" alt="Image" class="img-fluid">
+                    <img src="libs/client/images/reunion.jpg" alt="Image" class="img-fluid">
                 </div>
             </div>
 
