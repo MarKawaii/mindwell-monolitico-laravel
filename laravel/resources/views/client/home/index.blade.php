@@ -185,7 +185,7 @@
                         <li><strong>Mindfulness:</strong> Dedica tiempo a la atención plena. Medita, observa conscientemente o presta atención plena a tus actividades diarias. Mejora la concentración.</li>
 
                     </ul>
-                    <p class="mb-0"><a href="https://www.healthline.com/health/es/como-quitar-el-estres" class="more dark">    Conoce más tips<span class="icon-arrow_forward"></span></a></p>
+                    <p class="mb-0"><a href="https://www.healthline.com/health/es/como-quitar-el-estres" class="more dark">Conoce más tips<span class="icon-arrow_forward"></span></a></p>
                 </div>
             </div>
         </div>
