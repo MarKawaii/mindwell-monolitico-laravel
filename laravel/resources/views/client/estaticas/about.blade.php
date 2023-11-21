@@ -21,7 +21,7 @@
                 <div class="hero-img-wrap" style="margin-top: 40px;">
                     <!-- Asegúrate de reemplazar 'src' con la ruta correcta a la imagen que deseas mostrar -->
                     <img src="libs/client/images/equipo.png"
-                        class="img-fluid" alt="Equipo de Mind-Well" style="width: 70%">
+                        class="img-fluid" alt="Equipo de Mind-Well" style="width: 60%">
                 </div>
             </div>
         </div>
@@ -31,7 +31,7 @@
 <div class="container mt-5">
     <div class="row">
         <div class="col-4">
-            <h2 class="mb-4 section-title">Somos estudiantes con ganas de ser unnos excelentes profesionales</h2>
+            <h2 class="mb-4 section-title">Somos estudiantes con ganas de ser unos excelentes profesionales</h2>
                 <p class="mb-4">La salud mental incluye nuestro bienestar emocional, psicológico y social. Afecta la forma en que pensamos, 
                     sentimos y actuamos cuando enfrentamos la vida. También ayuda a determinar cómo manejamos el estrés, nos relacionamos con los demás
                     y tomamos decisiones. La salud mental es importante en todas las etapas de la vida, desde la niñez y la adolescencia hasta la adultez y la vejez. 
@@ -53,73 +53,6 @@
 </div>
 <!-- End Hero Section -->
 
-
-<!-- Start Why Choose Us Section -->
-<div class="why-choose-section">
-    <div class="container">
-        <div class="row justify-content-between">
-            <div class="col-lg-6">
-                <h2 class="section-title">¿Por qué nosotros?</h2>
-                <p>Como equipo de Mind-Well, queremos brindarte un apoyo para acceder a información sobre Salud mental y un fácil acceso a nuestros especialistas</p>
-
-                <div class="row my-5">
-                    <div class="col-6 col-md-6">
-                        <div class="feature">
-                            <div class="icon">
-                                <img src="libs/client/images/truck.svg" alt="Image" class="imf-fluid">
-                            </div>
-                            <h3>Fast &amp; Free Shipping</h3>
-                            <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
-                                vulputate.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-6 col-md-6">
-                        <div class="feature">
-                            <div class="icon">
-                                <img src="libs/client/images/bag.svg" alt="Image" class="imf-fluid">
-                            </div>
-                            <h3>Easy to Shop</h3>
-                            <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
-                                vulputate.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-6 col-md-6">
-                        <div class="feature">
-                            <div class="icon">
-                                <img src="libs/client/images/support.svg" alt="Image" class="imf-fluid">
-                            </div>
-                            <h3>24/7 Support</h3>
-                            <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
-                                vulputate.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-6 col-md-6">
-                        <div class="feature">
-                            <div class="icon">
-                                <img src="libs/client/images/return.svg" alt="Image" class="imf-fluid">
-                            </div>
-                            <h3>Hassle Free Returns</h3>
-                            <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
-                                vulputate.</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="col-lg-5">
-                <div class="img-wrap">
-                    <img src="libs/client/images/image5.jpg" alt="Image" class="img-fluid">
-                </div>
-            </div>
-
-        </div>
-    </div>
-</div>
 
 <!-- el Team -->
 

@@ -14,6 +14,7 @@ use App\Http\Controllers\Web\VistasEstaticasController;
 //contenido  visible para todo publico
 Route::resource('/', HomeController::class);
 Route::resource('/contactanos', ContactoController::class);
+
 // Vistas estaticas
 Route::get('/quienes_somos', [VistasEstaticasController::class, 'about'])->name('about'); 
 Route::get('/auto_ayuda', [VistasEstaticasController::class, 'autohelp'])->name('autohelp');
