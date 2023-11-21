@@ -5,9 +5,9 @@
 <meta name="author" content="AdminKit">
 <meta name="keywords" content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link rel="shortcut icon" href="img/icons/icon-48x48.png" />
+<link rel="shortcut icon" href="{{ asset('libs/client/images/mental.png') }}">
 <link rel="canonical" href="https://demo-basic.adminkit.io/" />
-<title>MarKawaii QHH</title>
+<title>MIND-WELL | DASHBOARD</title>
 
 <link href="{{ asset('libs/admin/css/app.css') }}" rel="stylesheet">
 <link href="{{ asset('libs/admin/css/custom.css') }}" rel="stylesheet">

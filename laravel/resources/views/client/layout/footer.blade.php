@@ -12,12 +12,13 @@
                                 src="libs/client/images/envelope-outline.svg" alt="Image"
                                 class="img-fluid"></span><span>Inscríbete para recibir información</span></h3>
 
-                    <form action="#" class="row g-3">
+                    <form action="{{ route('inscripcion.store') }}" method="post" class="row g-3">
+                        @csrf
                         <div class="col-auto">
-                            <input type="text" class="form-control" placeholder="Ingresa tu nombre">
+                            <input type="text" name="nombre" class="form-control"  placeholder="Ingresa tu nombre" required>
                         </div>
                         <div class="col-auto">
-                            <input type="email" class="form-control" placeholder="Ingresa tu correo electrónico">
+                            <input type="email" name="email" class="form-control" placeholder="Ingresa tu correo electrónico" required>
                         </div>
                         <div class="col-auto">
                             <button class="btn btn-primary">
@@ -65,7 +66,7 @@
 
                     <div class="col-6 col-sm-6 col-md-3">
                         <ul class="list-unstyled">
-                            <li><a href="{{ route('contactus') }}"> Contáctanos</a></li>
+                            <li><a href="{{ route('contactanos.index') }}"> Contáctanos</a></li>
                         </ul>
                     </div>
                 </div>

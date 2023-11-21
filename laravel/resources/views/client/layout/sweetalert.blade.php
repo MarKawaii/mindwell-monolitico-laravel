@@ -28,6 +28,32 @@
     </script>
 @endif
 
+@if(session('error'))
+    <script>
+        window.addEventListener('load', function() {
+            Swal.fire({
+                title: 'Error!',
+                text: '{{ session("error") }}',
+                icon: 'error',
+                confirmButtonText: 'Aceptar'
+            });
+        });
+    </script>
+@endif
+
+@if(session('info'))
+    <script>
+        window.addEventListener('load', function() {
+            Swal.fire({
+                title: 'Información!',
+                text: '{{ session("info") }}',
+                icon: 'info',
+                confirmButtonText: 'Aceptar'
+            });
+        });
+    </script>
+@endif
+
 
 
 <script>

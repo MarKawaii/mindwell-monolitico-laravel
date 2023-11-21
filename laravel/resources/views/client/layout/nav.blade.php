@@ -34,8 +34,8 @@
                     <a class="nav-link" href="{{ route('specialist') }}">Especialistas</a>
                 </li>
 
-                <li class="nav-item {{ Route::currentRouteName() == 'contactus' ? 'active' : '' }}">
-                    <a class="nav-link" href="{{ route('contactus') }}">Contáctanos</a>
+                <li class="nav-item {{ Route::currentRouteName() == 'contactanos.index' ? 'active' : '' }}">
+                    <a class="nav-link" href="{{ route('contactanos.index') }}">Contáctanos</a>
                 </li>
                 {{-- <li><a class="nav-link" href="{{ route('admin.index') }}">Panel Admin Prueba</a></li> --}}
 

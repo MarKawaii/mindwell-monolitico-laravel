@@ -22,23 +22,55 @@ class AuthController extends Controller
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
 
-            // Redirecciona a la vista de inicio de sesión después de una autenticación exitosa
-            return redirect()->route('index');
+            // Obtener el usuario autenticado
+            $user = Auth::user();
+
+            // Comprobar el dominio del correo electrónico
+            $emailDomain = substr(strrchr($user->email, "@"), 1);
+            if ($emailDomain == 'mindwell.cl' || $emailDomain == 'mindwell.com') {
+                // Redirigir a la ruta de administración con un mensaje
+                return redirect()->route('admin.index')->with('info', 'Bienvenido al panel de administración.');
+            }
+
+            // Verificar si falta alguno de los campos: ciudad, comuna, edad o dirección
+            if (empty($user->ciudad) || empty($user->comuna) || empty($user->edad) || empty($user->direccion)) {
+                // Redirigir a la vista de edición de perfil con un mensaje
+                return redirect()->route('perfil.edit', $user->id)
+                    ->with('info', 'Por favor completa tu información de perfil.');
+            }
+
+            // Redirecciona a la vista de inicio con un mensaje de bienvenida
+            return redirect()->route('index')->with('info', 'Bienvenido nuevamente a la plataforma!');
         }
 
+        // En caso de credenciales incorrectas, regresar con un mensaje de error
         return back()->withErrors([
             'email' => 'Las credenciales proporcionadas no coinciden con nuestros registros.',
-        ]);
+        ])->with('error', 'Error en el inicio de sesión, por favor verifica tus credenciales.');
     }
+
+
+
 
     public function create()
     {
+        // Verifica si el usuario está autenticado
+        if (Auth::check()) {
+            // Redirigir al usuario a la página de inicio o a alguna otra página
+            return redirect()->route('index')->with('info', 'Ya estás registrado y autenticado.');
+        }
+
         return view('client.auth.register');
     }
 
 
     public function store(Request $request)
     {
+        if (Auth::check()) {
+            // Redirigir al usuario a la página de inicio o a alguna otra página
+            return redirect()->route('index')->with('info', 'Ya estás registrado y autenticado.');
+        }
+
         // Lista de dominios permitidos
         $dominiosPermitidos = [
             'gmail.com', 'gmail.cl', 'outlok.com', 'hotmail.cl',
@@ -97,23 +129,37 @@ class AuthController extends Controller
 
     public function edit(string $id)
     {
+        $authUser = Auth::user();
+        // Verifica si el ID del usuario autenticado coincide con el ID pasado
+        if ($authUser->id != $id) {
+            return redirect()->route('index')->with('error', 'No tiene permiso para editar este perfil.');
+        }
+
         $user = User::find($id);
         return view('client.auth.edit', compact('user'));
     }
 
     public function update(Request $request, $id)
     {
+
+        $authUser = Auth::user();
+        // Verifica si el ID del usuario autenticado coincide con el ID pasado
+        if ($authUser->id != $id) {
+            return redirect()->route('index')->with('error', 'No tiene permiso para editar este perfil.');
+        }
+
         // Validación de datos
         $validatedData = $request->validate([
             'nombre' => 'required|max:255',
             'direccion' => 'required',
-            // 'email' => 'required|email', // Si decides hacer el email editable
             'ciudad' => 'required',
             'comuna' => 'required',
             'run' => 'required|min:9|max:12', // Ajusta según tus necesidades
-            'edad' => 'required|integer|min:18', // Ejemplo: solo mayores de 18 años
+            'fecha_nacimiento' => 'required|date', // Asegúrate de que sea una fecha válida
+            'genero' => 'required', // Asegúrate de que se haya seleccionado un género
+            'estadoCivil' => 'required', // Asegúrate de que se haya seleccionado un estado civil
             'celular' => 'required|digits:8', // Ejemplo: formato de celular chileno
-            // 'telefono' => 'nullable|digits:8' // Opcional y con formato de teléfono
+            'telefono' => 'nullable|digits:8' // Opcional y con formato de teléfono
         ]);
 
         try {
@@ -121,15 +167,16 @@ class AuthController extends Controller
             $user = User::findOrFail($id);
             $user->name = $validatedData['nombre'];
             $user->direccion = $validatedData['direccion'];
-            // $user->email = $validatedData['email']; // Si decides hacer el email editable
             $user->ciudad = $validatedData['ciudad'];
             $user->comuna = $validatedData['comuna'];
             $user->run = $validatedData['run'];
-            $user->edad = $validatedData['edad'];
+            $user->fecha_nacimiento = $validatedData['fecha_nacimiento']; // Asegúrate de que tu modelo soporte este campo
+            $user->genero = $validatedData['genero']; // Asegúrate de que tu modelo soporte este campo
+            $user->estado_civil = $validatedData['estadoCivil']; // Asegúrate de que tu modelo soporte este campo
             $user->celular = $validatedData['celular'];
-            $user->telefono = $validatedData['telefono'] ?? null; // Manejar campos opcionales
+            $user->telefono = $validatedData['telefono'];
             $user->save();
-
+    
             // Redirigir a alguna ruta con un mensaje de éxito
             return redirect()->route('perfil.edit', $id)->with('success', 'Datos actualizados correctamente.');
         } catch (\Exception $e) {
