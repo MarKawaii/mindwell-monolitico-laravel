@@ -272,11 +272,11 @@
 
                                             <div class="author-info">
                                                 <div class="author-pic">
-                                                    <img src="libs/client/images/person-1.png" alt="Maria Jones"
+                                                    <img src="libs/client/images/jordy.jpg" alt="Jordhy Thompson"
                                                         class="img-fluid">
                                                 </div>
-                                                <h3 class="font-weight-bold">Maria Jones</h3>
-                                                <span class="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span>
+                                                <h3 class="font-weight-bold">Jordhy Thompson</h3>
+                                                <span class="position d-block mb-3">Deportista. Jugador de Colo-Colo.</span>
                                             </div>
                                         </div>
 
@@ -296,11 +296,11 @@
 
                                             <div class="author-info">
                                                 <div class="author-pic">
-                                                    <img src="libs/client/images/person-1.png" alt="Maria Jones"
+                                                    <img src="libs/client/images/corchea.jpg" alt="Román Spaceronin7"
                                                         class="img-fluid">
                                                 </div>
-                                                <h3 class="font-weight-bold">Maria Jones</h3>
-                                                <span class="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span>
+                                                <h3 class="font-weight-bold">Román Spaceronin7 (Corxea)</h3>
+                                                <span class="position d-block mb-3">Youtuber. Streamer y compositor</span>
                                             </div>
                                         </div>
 
@@ -315,16 +315,16 @@
 
                                         <div class="testimonial-block text-center">
                                             <blockquote class="mb-5">
-                                                <p>&ldquo;Encontré la web de salud mental en un momento de necesidad extrema. La rapidez con la que pude conectarme con especialistas me sorprendió gratamente. La sección de autoayuda no solo me proporcionó consuelo, sino también estrategias efectivas para afrontar el estrés. Esta plataforma ha cambiado mi perspectiva y ha sido un apoyo invaluable en mi viaje hacia la salud mental.&rdquo;</p>
+                                                <p>&ldquo;Encontré la web de salud mental en un momento de necesidad extrema. La rapidez con la que pude conectarme con especialistas me sorprendió gratamente. Esta plataforma ha cambiado mi perspectiva y ha sido un apoyo invaluable en mi viaje hacia la salud mental.&rdquo;</p>
                                             </blockquote>
 
                                             <div class="author-info">
                                                 <div class="author-pic">
-                                                    <img src="libs/client/images/person-1.png" alt="Maria Jones"
+                                                    <img src="libs/client/images/brit.jpg" alt="Britany Spears"
                                                         class="img-fluid">
                                                 </div>
-                                                <h3 class="font-weight-bold">Maria Jones</h3>
-                                                <span class="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span>
+                                                <h3 class="font-weight-bold">Britany Spears</h3>
+                                                <span class="position d-block mb-3">Cantante y diseñadora</span>
                                             </div>
                                         </div>
 
