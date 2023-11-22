@@ -72,7 +72,7 @@
                 <img src="libs/client/images/alan.jpg" class="img-fluid mb-5 rounded">
                 <h3 clas><a href="#"><span class="">Alan</span> Jara</a></h3>
                     <span class="d-block position mb-4">Estudiante de Ingeniería en Informática</span>
-                    <p>Especialista en hacerse la wawa</p>
+                    <p>ssss</p>
                     <p class="mb-0"><a href="https://www.linkedin.com/in/alan-jara-616427140/" class="more dark">Perfil de LinkedIn<span class="icon-arrow_forward"></span></a></p>
             </div> 
             <!-- End Column 1 -->

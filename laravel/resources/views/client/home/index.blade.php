@@ -246,7 +246,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-7 mx-auto text-center">
-                    <h2 class="section-title">Testimonials</h2>
+                    <h2 class="section-title">Testimonios</h2>
                 </div>
             </div>
 
@@ -267,12 +267,7 @@
 
                                         <div class="testimonial-block text-center">
                                             <blockquote class="mb-5">
-                                                <p>&ldquo;Donec facilisis quam ut purus rutrum lobortis. Donec vitae
-                                                    odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
-                                                    vulputate velit imperdiet dolor tempor tristique. Pellentesque
-                                                    habitant morbi tristique senectus et netus et malesuada fames ac
-                                                    turpis egestas. Integer convallis volutpat dui quis
-                                                    scelerisque.&rdquo;</p>
+                                                <p>&ldquo;Descubrí la web de salud mental en un momento crucial de mi vida. Gracias a su fácil acceso, pude conectarme rápidamente con especialistas que comprendieron mi situación. La sección de autoayuda me proporcionó herramientas prácticas que aplico diariamente. Esta plataforma ha sido un salvavidas para mi bienestar emocional.&rdquo;</p>
                                             </blockquote>
 
                                             <div class="author-info">
@@ -296,12 +291,7 @@
 
                                         <div class="testimonial-block text-center">
                                             <blockquote class="mb-5">
-                                                <p>&ldquo;Donec facilisis quam ut purus rutrum lobortis. Donec vitae
-                                                    odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
-                                                    vulputate velit imperdiet dolor tempor tristique. Pellentesque
-                                                    habitant morbi tristique senectus et netus et malesuada fames ac
-                                                    turpis egestas. Integer convallis volutpat dui quis
-                                                    scelerisque.&rdquo;</p>
+                                                <p>&ldquo;La web de salud mental ha sido mi refugio. Acceder a profesionales capacitados fue tan sencillo como hacer clic. Hay muchos consejos prácticos que han sido mi guía constante. Estoy agradecido por encontrar un espacio en línea que realmente se preocupa por la salud mental de las personas.&rdquo;</p>
                                             </blockquote>
 
                                             <div class="author-info">
@@ -325,12 +315,7 @@
 
                                         <div class="testimonial-block text-center">
                                             <blockquote class="mb-5">
-                                                <p>&ldquo;Donec facilisis quam ut purus rutrum lobortis. Donec vitae
-                                                    odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
-                                                    vulputate velit imperdiet dolor tempor tristique. Pellentesque
-                                                    habitant morbi tristique senectus et netus et malesuada fames ac
-                                                    turpis egestas. Integer convallis volutpat dui quis
-                                                    scelerisque.&rdquo;</p>
+                                                <p>&ldquo;Encontré la web de salud mental en un momento de necesidad extrema. La rapidez con la que pude conectarme con especialistas me sorprendió gratamente. La sección de autoayuda no solo me proporcionó consuelo, sino también estrategias efectivas para afrontar el estrés. Esta plataforma ha cambiado mi perspectiva y ha sido un apoyo invaluable en mi viaje hacia la salud mental.&rdquo;</p>
                                             </blockquote>
 
                                             <div class="author-info">
