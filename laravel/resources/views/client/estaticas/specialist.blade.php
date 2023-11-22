@@ -4,150 +4,350 @@
 @endsection
 
 @section('content')
-<div class="hero">
-    <div class="container">
-        <div class="row justify-content-between">
-            <div class="col-lg-5">
-                <div class="intro-excerpt">
-                    <h1><span class="d-block">Nuestros Especialistas</span> </h1>
-                    <p class="mb-4">Comunícate con alguno de nuestros especialistas para coordinar internamente alguna consulta.
-                    </p>
-                    {{-- <p><a href="{{ route('services') }}" class="btn btn-secondary me-2">Servicios</a><a href="{{ route('contactus') }}"
-                            class="btn btn-white-outline">Contacto</a></p> --}}
-                </div>
-            </div>
+<style>
+    .post-entry {
+        position: relative;
+    }
 
-            <div class="col-lg-7">
-                <div class="hero-img-wrap" style="position: relative; top: -70px;">
-                    <!-- Asegúrate de reemplazar 'src' con la ruta correcta a la imagen que deseas mostrar -->
-                    <img src="libs/client/images/um-medico-jovem-e-bonito-em-branco-removebg-preview.png"
-                        class="img-fluid" alt="Equipo de Mind-Well" style="width: 50%;">
+    .linkedin-icon,
+    .whatsapp-icon {
+        position: absolute;
+        font-size: 28px; /* Ajusta el tamaño del icono según sea necesario */
+    }
+
+    .whatsapp-icon {
+        right: 30%; /* Ajusta la posición horizontal del icono de WhatsApp */
+        transform: translateX(50%); /* Ajusta la posición horizontal con translateX */
+    }
+
+    .linkedin-icon {
+        left: 30%; /* Ajusta la posición horizontal del icono de LinkedIn */
+        transform: translateX(-50%); /* Ajusta la posición horizontal con translateX */
+    }
+</style>
+
+
+    <div class="hero">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-5">
+                    <div class="intro-excerpt">
+                        <h1><span class="d-block">Nuestros Especialistas</span> </h1>
+                        <p class="mb-4">Comunícate con alguno de nuestros especialistas para coordinar internamente alguna
+                            consulta.
+                        </p>
+                    </div>
                 </div>
+
+                <div class="col-lg-7">
+                    <div class="hero-img-wrap" style="position: relative; top: -70px;">
+                        <!-- Asegúrate de reemplazar 'src' con la ruta correcta a la imagen que deseas mostrar -->
+                        <img src="libs/client/images/um-medico-jovem-e-bonito-em-branco-removebg-preview.png"
+                            class="img-fluid" alt="Equipo de Mind-Well" style="width: 50%;">
+                    </div>
+                </div>
+
             </div>
-            
         </div>
     </div>
-</div>
 
-<div class="blog-section">
-    <div class="container">
-        
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2>Especialistas</h2>
-                <p class="mb-4">Estos videos te podrían ayudar cuando sientas que necesites informarte.</p>
-            </div>
+    <div class="blog-section">
+        <div class="container">
 
-            <div class="col-12 col-sm-6 col-md-4 mb-5">
-                <div class="post-entry">
-                    <a href="#" class="post-thumbnail"><img src="libs/client/images/post-1.jpg" alt="Image" class="img-fluid"></a>
-                    <div class="post-content-entry">
-                        <h3><a href="#">First Time Home Owner Ideas</a></h3>
-                        <div class="meta">
-                            <span>by <a href="#">Kristin Watson</a></span> <span>on <a href="#">Dec 19, 2021</a></span>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Especialistas</h2>
+                    <p class="mb-4">Nuestro equipo de especialistas en salud mental, estarán disponibles para atender 
+                        cualquier duda que tengas y deseas coordinar una atención puedes hacerlo directamente con ellos.</p>
+                </div>
+
+                <!-- Especialista 1 -->
+                <div class="col-12 col-sm-6 col-md-4 mb-5">
+                    <div class="post-entry">
+                        <a href="#" class="post-thumbnail">
+                            <img src="libs/client/images/yo3.jpg" alt="Especialista 1" class="img-fluid">
+                        </a>
+                        <div class="post-content-entry">
+                            <h3><a href="#">Nombre del Especialista 1</a></h3>
+                            <!-- Párrafo con lista de 5 puntos -->
+                            <p>Descripción del especialista:</p>
+                            <ul>
+                                <li>Punto 1</li>
+                                <li>Punto 2</li>
+                                <li>Punto 3</li>
+                                <li>Punto 4</li>
+                                <li>Punto 5</li>
+                            </ul>
+                            <p>Contáctate directamente con el especialista en los íconos de acá abajo.&darr;</p>
+
+                            <div class="meta">
+                                <!-- Iconos debajo de la lista -->
+                                <div>
+                                    <a href="https://www.linkedin.com/in/diego-ignacio-arancibia-pinto-92a3301ba/" target="_blank" class="linkedin-icon">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                    <a href="https://wa.me/+56986200339" target="_blank" class="whatsapp-icon">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                
+                
+                <!-- Fin Especialista 1 -->
 
-            <div class="col-12 col-sm-6 col-md-4 mb-5">
-                <div class="post-entry">
-                    <a href="#" class="post-thumbnail"><img src="libs/client/images/post-2.jpg" alt="Image" class="img-fluid"></a>
-                    <div class="post-content-entry">
-                        <h3><a href="#">How To Keep Your Furniture Clean</a></h3>
-                        <div class="meta">
-                            <span>by <a href="#">Robert Fox</a></span> <span>on <a href="#">Dec 15, 2021</a></span>
+                <!-- Especialista 2 -->
+                <div class="col-12 col-sm-6 col-md-4 mb-5">
+                    <div class="post-entry">
+                        <a href="#" class="post-thumbnail">
+                            <img src="libs/client/images/yo3.jpg" alt="Especialista 1" class="img-fluid">
+                        </a>
+                        <div class="post-content-entry">
+                            <h3><a href="#">Nombre del Especialista 2</a></h3>
+                             <!-- Párrafo con lista de 5 puntos -->
+                             <p>Descripción del especialista:</p>
+                             <ul>
+                                 <li>Punto 1</li>
+                                 <li>Punto 2</li>
+                                 <li>Punto 3</li>
+                                 <li>Punto 4</li>
+                                 <li>Punto 5</li>
+                             </ul>
+                             <p>Contáctate directamente con el especialista en los íconos de acá abajo.&darr;</p>
+                            <div class="meta">
+                                <a href="ENLACE_A_LINKEDIN_ESPECIALISTA_1" target="_blank" class="linkedin-icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="ENLACE_A_WHATSAPP_ESPECIALISTA_1" target="_blank" class="whatsapp-icon">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                <!-- Fin Especialista 2 -->
 
-            <div class="col-12 col-sm-6 col-md-4 mb-5">
-                <div class="post-entry">
-                    <a href="#" class="post-thumbnail"><img src="libs/client/images/post-3.jpg" alt="Image" class="img-fluid"></a>
-                    <div class="post-content-entry">
-                        <h3><a href="#">Small Space Furniture Apartment Ideas</a></h3>
-                        <div class="meta">
-                            <span>by <a href="#">Kristin Watson</a></span> <span>on <a href="#">Dec 12, 2021</a></span>
+                <!-- Especialista 3 -->
+                <div class="col-12 col-sm-6 col-md-4 mb-5">
+                    <div class="post-entry">
+                        <a href="#" class="post-thumbnail">
+                            <img src="libs/client/images/yo3.jpg" alt="Especialista 1" class="img-fluid">
+                        </a>
+                        <div class="post-content-entry">
+                            <h3><a href="#">Nombre del Especialista 3</a></h3>
+                             <!-- Párrafo con lista de 5 puntos -->
+                             <p>Descripción del especialista:</p>
+                             <ul>
+                                 <li>Punto 1</li>
+                                 <li>Punto 2</li>
+                                 <li>Punto 3</li>
+                                 <li>Punto 4</li>
+                                 <li>Punto 5</li>
+                             </ul>
+                             <p>Contáctate directamente con el especialista en los íconos de acá abajo.&darr;</p>
+                            <div class="meta">
+                                <a href="ENLACE_A_LINKEDIN_ESPECIALISTA_1" target="_blank" class="linkedin-icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="ENLACE_A_WHATSAPP_ESPECIALISTA_1" target="_blank" class="whatsapp-icon">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                <!-- Fin Especialista 3 -->
 
-            <div class="col-12 col-sm-6 col-md-4 mb-5">
-                <div class="post-entry">
-                    <a href="#" class="post-thumbnail"><img src="libs/client/images/post-1.jpg" alt="Image" class="img-fluid"></a>
-                    <div class="post-content-entry">
-                        <h3><a href="#">First Time Home Owner Ideas</a></h3>
-                        <div class="meta">
-                            <span>by <a href="#">Kristin Watson</a></span> <span>on <a href="#">Dec 19, 2021</a></span>
+                <!-- Especialista 4 -->
+                <div class="col-12 col-sm-6 col-md-4 mb-5">
+                    <div class="post-entry">
+                        <a href="#" class="post-thumbnail">
+                            <img src="libs/client/images/yo3.jpg" alt="Especialista 1" class="img-fluid">
+                        </a>
+                        <div class="post-content-entry">
+                            <h3><a href="#">Nombre del Especialista 4</a></h3>
+                             <!-- Párrafo con lista de 5 puntos -->
+                             <p>Descripción del especialista:</p>
+                             <ul>
+                                 <li>Punto 1</li>
+                                 <li>Punto 2</li>
+                                 <li>Punto 3</li>
+                                 <li>Punto 4</li>
+                                 <li>Punto 5</li>
+                             </ul>
+                             <p>Contáctate directamente con el especialista en los íconos de acá abajo.&darr;</p>
+                            <div class="meta">
+                                <a href="ENLACE_A_LINKEDIN_ESPECIALISTA_1" target="_blank" class="linkedin-icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="ENLACE_A_WHATSAPP_ESPECIALISTA_1" target="_blank" class="whatsapp-icon">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                <!-- Fin Especialista 4 -->
 
-            <div class="col-12 col-sm-6 col-md-4 mb-5">
-                <div class="post-entry">
-                    <a href="#" class="post-thumbnail"><img src="libs/client/images/post-2.jpg" alt="Image" class="img-fluid"></a>
-                    <div class="post-content-entry">
-                        <h3><a href="#">How To Keep Your Furniture Clean</a></h3>
-                        <div class="meta">
-                            <span>by <a href="#">Robert Fox</a></span> <span>on <a href="#">Dec 15, 2021</a></span>
+                <!-- Especialista 5 -->
+                <div class="col-12 col-sm-6 col-md-4 mb-5">
+                    <div class="post-entry">
+                        <a href="#" class="post-thumbnail">
+                            <img src="libs/client/images/yo3.jpg" alt="Especialista 1" class="img-fluid">
+                        </a>
+                        <div class="post-content-entry">
+                            <h3><a href="#">Nombre del Especialista 5</a></h3>
+                             <!-- Párrafo con lista de 5 puntos -->
+                             <p>Descripción del especialista:</p>
+                             <ul>
+                                 <li>Punto 1</li>
+                                 <li>Punto 2</li>
+                                 <li>Punto 3</li>
+                                 <li>Punto 4</li>
+                                 <li>Punto 5</li>
+                             </ul>
+                             <p>Contáctate directamente con el especialista en los íconos de acá abajo.&darr;</p>
+                            <div class="meta">
+                                <a href="ENLACE_A_LINKEDIN_ESPECIALISTA_1" target="_blank" class="linkedin-icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="ENLACE_A_WHATSAPP_ESPECIALISTA_1" target="_blank" class="whatsapp-icon">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                <!-- Fin Especialista 5 -->
 
-            <div class="col-12 col-sm-6 col-md-4 mb-5">
-                <div class="post-entry">
-                    <a href="#" class="post-thumbnail"><img src="libs/client/images/post-3.jpg" alt="Image" class="img-fluid"></a>
-                    <div class="post-content-entry">
-                        <h3><a href="#">Small Space Furniture Apartment Ideas</a></h3>
-                        <div class="meta">
-                            <span>by <a href="#">Kristin Watson</a></span> <span>on <a href="#">Dec 12, 2021</a></span>
+                <!-- Especialista 6 -->
+                <div class="col-12 col-sm-6 col-md-4 mb-5">
+                    <div class="post-entry">
+                        <a href="#" class="post-thumbnail">
+                            <img src="libs/client/images/yo3.jpg" alt="Especialista 1" class="img-fluid">
+                        </a>
+                        <div class="post-content-entry">
+                            <h3><a href="#">Nombre del Especialista 6</a></h3>
+                             <!-- Párrafo con lista de 5 puntos -->
+                             <p>Descripción del especialista:</p>
+                             <ul>
+                                 <li>Punto 1</li>
+                                 <li>Punto 2</li>
+                                 <li>Punto 3</li>
+                                 <li>Punto 4</li>
+                                 <li>Punto 5</li>
+                             </ul>
+                             <p>Contáctate directamente con el especialista en los íconos de acá abajo.&darr;</p>
+                            <div class="meta">
+                                <a href="ENLACE_A_LINKEDIN_ESPECIALISTA_1" target="_blank" class="linkedin-icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="ENLACE_A_WHATSAPP_ESPECIALISTA_1" target="_blank" class="whatsapp-icon">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                <!-- Fin Especialista 6 -->
 
-            <div class="col-12 col-sm-6 col-md-4 mb-5">
-                <div class="post-entry">
-                    <a href="#" class="post-thumbnail"><img src="libs/client/images/post-1.jpg" alt="Image" class="img-fluid"></a>
-                    <div class="post-content-entry">
-                        <h3><a href="#">First Time Home Owner Ideas</a></h3>
-                        <div class="meta">
-                            <span>by <a href="#">Kristin Watson</a></span> <span>on <a href="#">Dec 19, 2021</a></span>
+                <!-- Especialista 7 -->
+                <div class="col-12 col-sm-6 col-md-4 mb-5">
+                    <div class="post-entry">
+                        <a href="#" class="post-thumbnail">
+                            <img src="libs/client/images/yo3.jpg" alt="Especialista 1" class="img-fluid">
+                        </a>
+                        <div class="post-content-entry">
+                            <h3><a href="#">Nombre del Especialista 7</a></h3>
+                             <!-- Párrafo con lista de 5 puntos -->
+                             <p>Descripción del especialista:</p>
+                             <ul>
+                                 <li>Punto 1</li>
+                                 <li>Punto 2</li>
+                                 <li>Punto 3</li>
+                                 <li>Punto 4</li>
+                                 <li>Punto 5</li>
+                             </ul>
+                             <p>Contáctate directamente con el especialista en los íconos de acá abajo.&darr;</p>
+                            <div class="meta">
+                                <a href="ENLACE_A_LINKEDIN_ESPECIALISTA_1" target="_blank" class="linkedin-icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="ENLACE_A_WHATSAPP_ESPECIALISTA_1" target="_blank" class="whatsapp-icon">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                <!-- Fin Especialista 7 -->
 
-            <div class="col-12 col-sm-6 col-md-4 mb-5">
-                <div class="post-entry">
-                    <a href="#" class="post-thumbnail"><img src="libs/client/images/post-2.jpg" alt="Image" class="img-fluid"></a>
-                    <div class="post-content-entry">
-                        <h3><a href="#">How To Keep Your Furniture Clean</a></h3>
-                        <div class="meta">
-                            <span>by <a href="#">Robert Fox</a></span> <span>on <a href="#">Dec 15, 2021</a></span>
+                <!-- Especialista 8 -->
+                <div class="col-12 col-sm-6 col-md-4 mb-5">
+                    <div class="post-entry">
+                        <a href="#" class="post-thumbnail">
+                            <img src="libs/client/images/yo3.jpg" alt="Especialista 1" class="img-fluid">
+                        </a>
+                        <div class="post-content-entry">
+                            <h3><a href="#">Nombre del Especialista 8</a></h3>
+                             <!-- Párrafo con lista de 5 puntos -->
+                             <p>Descripción del especialista:</p>
+                             <ul>
+                                 <li>Punto 1</li>
+                                 <li>Punto 2</li>
+                                 <li>Punto 3</li>
+                                 <li>Punto 4</li>
+                                 <li>Punto 5</li>
+                             </ul>
+                             <p>Contáctate directamente con el especialista en los íconos de acá abajo.&darr;</p>
+                            <div class="meta">
+                                <a href="ENLACE_A_LINKEDIN_ESPECIALISTA_1" target="_blank" class="linkedin-icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="ENLACE_A_WHATSAPP_ESPECIALISTA_1" target="_blank" class="whatsapp-icon">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                <!-- Fin Especialista 8 -->
 
-            <div class="col-12 col-sm-6 col-md-4 mb-5">
-                <div class="post-entry">
-                    <a href="#" class="post-thumbnail"><img src="libs/client/images/post-3.jpg" alt="Image" class="img-fluid"></a>
-                    <div class="post-content-entry">
-                        <h3><a href="#">Small Space Furniture Apartment Ideas</a></h3>
-                        <div class="meta">
-                            <span>by <a href="#">Kristin Watson</a></span> <span>on <a href="#">Dec 12, 2021</a></span>
+                <!-- Especialista 9 -->
+                <div class="col-12 col-sm-6 col-md-4 mb-5">
+                    <div class="post-entry">
+                        <a href="#" class="post-thumbnail">
+                            <img src="libs/client/images/yo3.jpg" alt="Especialista 1" class="img-fluid">
+                        </a>
+                        <div class="post-content-entry">
+                            <h3><a href="#">Nombre del Especialista 9</a></h3>
+                             <!-- Párrafo con lista de 5 puntos -->
+                             <p>Descripción del especialista:</p>
+                             <ul>
+                                 <li>Punto 1</li>
+                                 <li>Punto 2</li>
+                                 <li>Punto 3</li>
+                                 <li>Punto 4</li>
+                                 <li>Punto 5</li>
+                             </ul>
+                             <p>Contáctate directamente con el especialista en los íconos de acá abajo.&darr;</p>
+                            <div class="meta">
+                                <a href="ENLACE_A_LINKEDIN_ESPECIALISTA_1" target="_blank" class="linkedin-icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="ENLACE_A_WHATSAPP_ESPECIALISTA_1" target="_blank" class="whatsapp-icon">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                <!-- Fin Especialista 9 -->
 
+            </div>
         </div>
     </div>
-</div>
-<!-- End Blog Section -->
+    <!-- End Blog Section -->
 @endsection
