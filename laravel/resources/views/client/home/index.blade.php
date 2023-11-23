@@ -189,6 +189,51 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+                    <div class="product-item-lg d-flex flex-column align-items-center">
+                        <div class="thumbnail mb-3">
+                            <a href="https://www.gob.cl/saludablemente/mujer/" target="_blank">
+                                <img src="libs/client/images/celu.jpg" alt="Nordic Chair" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="text-center">
+                            <h3>Nordic Chair</h3>
+                            <p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio</p>
+                            <p><a href="https://www.gob.cl/saludablemente/mujer/" target="_blank">Read More</a></p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+                    <div class="product-item-lg d-flex flex-column align-items-center">
+                        <div class="thumbnail mb-3">
+                            <a href="https://www.minsal.cl/construyendo-salud-mental/" target="_blank">
+                                <img src="libs/client/images/copago.jpg" alt="Kruzo Aero Chair" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="text-center">
+                            <h3>Kruzo Aero Chair</h3>
+                            <p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio</p>
+                            <p><a href="https://www.minsal.cl/construyendo-salud-mental/" target="_blank">Read More</a></p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+                    <div class="product-item-lg d-flex flex-column align-items-center">
+                        <div class="thumbnail mb-3">
+                            <a href="https://www.desarrollosocialyfamilia.gob.cl/la-salud-mental-importa" target="_blank">
+                                <img src="libs/client/images/ministerio.jpg" alt="Ergonomic Chair" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="text-center">
+                            <h3>Ergonomic Chair</h3>
+                            <p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio</p>
+                            <p><a href="https://www.desarrollosocialyfamilia.gob.cl/la-salud-mental-importa" target="_blank">Read More</a></p>
+                        </div>
+                    </div>
+                </div>
     
             </div>
         </div>

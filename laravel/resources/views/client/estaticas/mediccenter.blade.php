@@ -13,7 +13,7 @@
                 <div class="col-lg-5">
                     <div class="intro-excerpt">
                         <h1><span class="d-block">Centros Médicos</span> </h1>
-                        <p class="mb-4">Revisa los distintos cetnros médicos en la Región Metropolitana.
+                        <p class="mb-4">Revisa los distintos centros médicos en la Región Metropolitana.
                         </p>
                         {{-- <p><a href="{{ route('services') }}" class="btn btn-secondary me-2">Servicios</a><a href="{{ route('contactus') }}"
                                 class="btn btn-white-outline">Contacto</a></p> --}}
