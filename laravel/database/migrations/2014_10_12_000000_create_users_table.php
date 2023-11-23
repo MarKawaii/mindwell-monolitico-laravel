@@ -29,8 +29,8 @@ return new class extends Migration
             $table->string('estado_civil')->nullable();
 
             $table->string('direccion')->unique()->nullable();
-            $table->string('ciudad')->unique()->nullable();
-            $table->string('comuna')->unique()->nullable();
+            $table->string('ciudad')->nullable();
+            $table->string('comuna')->nullable();
 
 
             $table->rememberToken();
