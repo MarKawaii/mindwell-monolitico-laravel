@@ -36,6 +36,7 @@
                         <p class="mb-4">Comunícate con alguno de nuestros especialistas para coordinar internamente alguna
                             consulta.
                         </p>
+                       
                     </div>
                 </div>
 
@@ -58,7 +59,24 @@
                 <div class="col-lg-12 text-center">
                     <h2>Especialistas</h2>
                     <p class="mb-4">Nuestro equipo de especialistas en salud mental, estarán disponibles para atender 
-                        cualquier duda que tengas y deseas coordinar una atención puedes hacerlo directamente con ellos.</p>
+                        cualquier duda que tengas y si deseas coordinar una atención puedes hacerlo directamente con ellos.</p>
+                    
+                </div>
+
+                <div>
+                    <h4>Contamos con diversas áreas de atención:</h4>
+                    <ul>
+                        <li>Medicina en Salud mental</li>
+                        <li>Neurología</li>
+                        <li>Psicología</li>
+                        <li>Psiquiatría</li>
+                        <li>Terapía de parejas y familia</li>
+                        <li>Psicopedagogía</li>
+                        <li>Terapia ocupacional</li>
+                        <li>Fonoaudiología</li>
+
+
+                    </ul>
                 </div>
 
                 <!-- Especialista 1 -->
