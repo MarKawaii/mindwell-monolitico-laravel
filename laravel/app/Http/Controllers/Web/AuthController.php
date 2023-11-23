@@ -33,7 +33,7 @@ class AuthController extends Controller
             }
 
             // Verificar si falta alguno de los campos: ciudad, comuna, edad o dirección
-            if (empty($user->ciudad) || empty($user->comuna) || empty($user->edad) || empty($user->direccion)) {
+            if (empty($user->ciudad) || empty($user->comuna) || empty($user->fecha_nacimiento) || empty($user->direccion)) {
                 // Redirigir a la vista de edición de perfil con un mensaje
                 return redirect()->route('perfil.edit', $user->id)
                     ->with('info', 'Por favor completa tu información de perfil.');
