@@ -29,10 +29,13 @@
                 <li class="nav-item {{ Route::currentRouteName() == 'autohelp' ? 'active' : '' }}">
                     <a class="nav-link" href="{{ route('autohelp') }}">Autoayuda</a>
                 </li>
-
+                
+                @if (Auth::check())
                 <li class="nav-item {{ Route::currentRouteName() == 'specialist' ? 'active' : '' }}">
                     <a class="nav-link" href="{{ route('specialist') }}">Especialistas</a>
                 </li>
+                @endif
+                
 
                 <li class="nav-item {{ Route::currentRouteName() == 'contactanos.index' ? 'active' : '' }}">
                     <a class="nav-link" href="{{ route('contactanos.index') }}">Contáctanos</a>
