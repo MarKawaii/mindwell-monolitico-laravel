@@ -32,7 +32,7 @@
         </div>
     </div>
 
-    <div class="container mt-5">
+    <div class="container mt-5 mb-5">
         <h1 class="mb-4">Centros Médicos</h1>
 
         <div class="card">
