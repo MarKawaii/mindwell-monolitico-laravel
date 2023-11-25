@@ -7,7 +7,7 @@
 
 <style>
    .popular-product .thumbnail img {
-        width: 401px; /* Ajusta el ancho según tus preferencias */
+        width: 461px; /* Ajusta el ancho según tus preferencias */
         height: 281px; /* Ajusta la altura según tus preferencias */
         object-fit: cover; /* Mantiene la relación de aspecto y cubre el contenedor */
     }
@@ -15,6 +15,13 @@
     .popular-product .product-item-lg {
         text-align: center;
         margin-bottom: 20px; /* Puedes ajustar este valor según tus preferencias */
+    }
+    .product-section img{
+        width: 461px; /* Ajusta el ancho según tus preferencias */
+        height: 441px; 
+    }
+    .product-title {
+        text-align: center
     }
 </style>
 
@@ -28,7 +35,7 @@
                         <p class="mb-4">Cuidado especializado y compasivo en un entorno seguro y acogedor, para guiarle
                             hacia su bienestar emocional.</p>
                         <p><a href="{{ route('services') }}" class="btn btn-secondary me-2">Servicios</a><a href="{{ route('contactanos.index') }}"
-                                class="btn btn-white-outline">Contacto</a></p>
+                                class="btn btn-white-outline" target="_blank">Contacto</a></p>
                     </div>
                 </div>
 
@@ -56,57 +63,38 @@
                     <h2 class="mb-4 section-title">¿Qué es la salud mental?</h2>
                     <p class="mb-4">La salud mental incluye nuestro bienestar emocional, psicológico y social. Afecta la forma en que pensamos, 
                         sentimos y actuamos cuando enfrentamos la vida. También ayuda a determinar cómo manejamos el estrés, nos relacionamos con los demás
-                        y tomamos decisiones. La salud mental es importante en todas las etapas de la vida, desde la niñez y la adolescencia hasta la adultez y la vejez. </p>
-                    <p><a href="shop.html" class="btn">Explore</a></p>
+                        y tomamos decisiones. La salud mental es importante en todas las etapas de la vida, desde la niñez y la adolescencia hasta la adultez y la vejez.
+                    </p>
+                    <p><a href="https://www.mayoclinic.org/es/healthy-lifestyle/adult-health/in-depth/mental-health/art-20044098" target="_blank" class="btn">Explorar</a></p>
                 </div>
                 <!-- End Column 1 -->
 
                 <!-- Start Column 2 -->
                 <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-                    <a class="product-item" href="cart.html">
-                        <img src="libs/client/images/image77.jpg" class="img-fluid product-thumbnail">
-                        <h3 class="product-title">Florece</h3>
-                        
-
-                        <span class="icon-cross">
-                            <img src="libs/client/images/cross.svg" class="img-fluid">
-                        </span>
-                    </a>
+                    <img src="libs/client/images/image77.jpg" class="img-fluid">
+                    <h3 class="product-title">Florece</h3>
                 </div>
                 <!-- End Column 2 -->
 
                 <!-- Start Column 3 -->
                 <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-                    <a class="product-item" href="cart.html">
-                        <img src="libs/client/images/brain.jpg" class="img-fluid product-thumbnail">
-                        <h3 class="product-title">Sana</h3>
-                        
-
-                        <span class="icon-cross">
-                            <img src="libs/client/images/cross.svg" class="img-fluid">
-                        </span>
-                    </a>
+                    <img src="libs/client/images/brain.jpg" class="img-fluid">
+                    <h3 class="product-title">Sana</h3>
                 </div>
                 <!-- End Column 3 -->
 
                 <!-- Start Column 4 -->
                 <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-                    <a class="product-item" href="cart.html">
-                        <img src="libs/client/images/rompe.jpg" class="img-fluid product-thumbnail">
-                        <h3 class="product-title">Reconstruye</h3>
-                        
-
-                        <span class="icon-cross">
-                            <img src="libs/client/images/cross.svg" class="img-fluid">
-                        </span>
-                    </a>
+                    <img src="libs/client/images/rompe.jpg" class="img-fluid">
+                    <h3 class="product-title">Reconstruye</h3>
                 </div>
                 <!-- End Column 4 -->
 
             </div>
         </div>
     </div>
-    <!-- End Product Section -->
+<!-- End Product Section -->
+
 
 
     <!-- Start We Help Section -->
@@ -149,13 +137,13 @@
                     <div class="product-item-lg d-flex flex-column align-items-center">
                         <div class="thumbnail mb-3">
                             <a href="https://www.gob.cl/saludablemente/mujer/" target="_blank">
-                                <img src="libs/client/images/celu.jpg" alt="Nordic Chair" class="img-fluid">
+                                <img src="libs/client/images/celu.jpg" alt="celu" class="img-fluid">
                             </a>
                         </div>
                         <div class="text-center">
-                            <h3>Nordic Chair</h3>
-                            <p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio</p>
-                            <p><a href="https://www.gob.cl/saludablemente/mujer/" target="_blank">Read More</a></p>
+                            <h3>Apoyo a las mujeres</h3>
+                            <p>Un refugio solidario para todas aquellas mujeres cuya integridad y salud mental se han visto afectadas e información para mujeres víctimas de violencia.</p>
+                            <p><a href="https://www.gob.cl/saludablemente/mujer/" target="_blank">Más información</a></p>
                         </div>
                     </div>
                 </div>
@@ -164,13 +152,13 @@
                     <div class="product-item-lg d-flex flex-column align-items-center">
                         <div class="thumbnail mb-3">
                             <a href="https://www.minsal.cl/construyendo-salud-mental/" target="_blank">
-                                <img src="libs/client/images/copago.jpg" alt="Kruzo Aero Chair" class="img-fluid">
+                                <img src="libs/client/images/copago.jpg" alt="minsal" class="img-fluid">
                             </a>
                         </div>
                         <div class="text-center">
-                            <h3>Kruzo Aero Chair</h3>
-                            <p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio</p>
-                            <p><a href="https://www.minsal.cl/construyendo-salud-mental/" target="_blank">Read More</a></p>
+                            <h3>Red Pública de Salud gratuita</h3>
+                            <p>El Ministerio de Salud reafirma el compromiso de que en Chile “nunca más las personas estarán solas para enfrentar sus necesidades en salud mental”</p>
+                            <p><a href="https://www.minsal.cl/construyendo-salud-mental/" target="_blank">Más información</a></p>
                         </div>
                     </div>
                 </div>
@@ -179,13 +167,13 @@
                     <div class="product-item-lg d-flex flex-column align-items-center">
                         <div class="thumbnail mb-3">
                             <a href="https://www.desarrollosocialyfamilia.gob.cl/la-salud-mental-importa" target="_blank">
-                                <img src="libs/client/images/ministerio.jpg" alt="Ergonomic Chair" class="img-fluid">
+                                <img src="libs/client/images/ministerio.jpg" alt="lllll" class="img-fluid">
                             </a>
                         </div>
                         <div class="text-center">
-                            <h3>Ergonomic Chair</h3>
-                            <p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio</p>
-                            <p><a href="https://www.desarrollosocialyfamilia.gob.cl/la-salud-mental-importa" target="_blank">Read More</a></p>
+                            <h3>Desarrollo Social y Familia</h3>
+                            <p>Un espacio donde se comparte información sobre las señales que pueden afectar la salud mental de las personas y programas que ofrece el Gobierno de Chile.</p>
+                            <p><a href="https://www.desarrollosocialyfamilia.gob.cl/la-salud-mental-importa" target="_blank">Más información</a></p>
                         </div>
                     </div>
                 </div>
@@ -193,14 +181,14 @@
                 <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
                     <div class="product-item-lg d-flex flex-column align-items-center">
                         <div class="thumbnail mb-3">
-                            <a href="https://www.gob.cl/saludablemente/mujer/" target="_blank">
-                                <img src="libs/client/images/celu.jpg" alt="Nordic Chair" class="img-fluid">
+                            <a href="https://saludmental.achs.cl/" target="_blank">
+                                <img src="libs/client/images/achs5.jpg" alt="jjjjjjjjj" class="img-fluid">
                             </a>
                         </div>
                         <div class="text-center">
-                            <h3>Nordic Chair</h3>
-                            <p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio</p>
-                            <p><a href="https://www.gob.cl/saludablemente/mujer/" target="_blank">Read More</a></p>
+                            <h3>ACHS: Salud Mental</h3>
+                            <p>Si eres empleador o trabajador, en este espacio podrás mantenerte informado sobre la salud mental en estos espacios.</p>
+                            <p><a href="https://saludmental.achs.cl/" target="_blank">Más información</a></p>
                         </div>
                     </div>
                 </div>
@@ -208,14 +196,14 @@
                 <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
                     <div class="product-item-lg d-flex flex-column align-items-center">
                         <div class="thumbnail mb-3">
-                            <a href="https://www.minsal.cl/construyendo-salud-mental/" target="_blank">
-                                <img src="libs/client/images/copago.jpg" alt="Kruzo Aero Chair" class="img-fluid">
+                            <a href="https://www.gob.cl/saludablemente/ayudaprofesionales/" target="_blank">
+                                <img src="libs/client/images/ayuda2.jpg" alt="Kkkkkkr" class="img-fluid">
                             </a>
                         </div>
                         <div class="text-center">
-                            <h3>Kruzo Aero Chair</h3>
-                            <p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio</p>
-                            <p><a href="https://www.minsal.cl/construyendo-salud-mental/" target="_blank">Read More</a></p>
+                            <h3>Ayuda de profesionales</h3>
+                            <p>Si deseas acceder a ayuda ofrecida por el Gobierno de Chile, acá podrás encontrar información relacionada como teléfonos y contactos directos.</p>
+                            <p><a href="https://www.gob.cl/saludablemente/ayudaprofesionales/" target="_blank">Más información</a></p>
                         </div>
                     </div>
                 </div>
@@ -223,14 +211,14 @@
                 <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
                     <div class="product-item-lg d-flex flex-column align-items-center">
                         <div class="thumbnail mb-3">
-                            <a href="https://www.desarrollosocialyfamilia.gob.cl/la-salud-mental-importa" target="_blank">
-                                <img src="libs/client/images/ministerio.jpg" alt="Ergonomic Chair" class="img-fluid">
+                            <a href="https://www.crececontigo.gob.cl/beneficios/apoyo-para-una-salud-mental-integral-etapaninos-y-ninas-de-4-anos-o-mas/" target="_blank">
+                                <img src="libs/client/images/nino4.jpg" alt="jjjjjjj" class="img-fluid">
                             </a>
                         </div>
                         <div class="text-center">
-                            <h3>Ergonomic Chair</h3>
-                            <p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio</p>
-                            <p><a href="https://www.desarrollosocialyfamilia.gob.cl/la-salud-mental-importa" target="_blank">Read More</a></p>
+                            <h3>Salud Mental Infantil</h3>
+                            <p>El Programa de Apoyo a la Salud Mental Infantil PASMI tiene por objeto brindar diagnóstico y tratamiento a niños que tengan la edad de 5 a 9 años</p>
+                            <p><a href="https://www.crececontigo.gob.cl/beneficios/apoyo-para-una-salud-mental-integral-etapaninos-y-ninas-de-4-anos-o-mas/" target="_blank">Más información</a></p>
                         </div>
                     </div>
                 </div>
