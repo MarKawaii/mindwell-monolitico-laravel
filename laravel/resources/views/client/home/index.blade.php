@@ -378,4 +378,208 @@
 </div>
 <!-- End Testimonial Slider -->
 
+
+    <!-- Start Popular Product -->
+    <div class="popular-product">
+        <div class="container">
+            <div class="row">
+    
+                <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+                    <div class="product-item-lg d-flex flex-column align-items-center">
+                        <div class="thumbnail mb-3">
+                            <a href="https://www.gob.cl/saludablemente/mujer/" target="_blank">
+                                <img src="libs/client/images/celu.jpg" alt="celu" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="text-center">
+                            <h3>Apoyo a las mujeres</h3>
+                            <p>Un refugio solidario para todas aquellas mujeres cuya integridad y salud mental se han visto afectadas e información para mujeres víctimas de violencia.</p>
+                            <p><a href="https://www.gob.cl/saludablemente/mujer/" target="_blank">Más información</a></p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+                    <div class="product-item-lg d-flex flex-column align-items-center">
+                        <div class="thumbnail mb-3">
+                            <a href="https://www.minsal.cl/construyendo-salud-mental/" target="_blank">
+                                <img src="libs/client/images/copago.jpg" alt="minsal" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="text-center">
+                            <h3>Red Pública de Salud gratuita</h3>
+                            <p>El Ministerio de Salud reafirma el compromiso de que en Chile “nunca más las personas estarán solas para enfrentar sus necesidades en salud mental”</p>
+                            <p><a href="https://www.minsal.cl/construyendo-salud-mental/" target="_blank">Más información</a></p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+                    <div class="product-item-lg d-flex flex-column align-items-center">
+                        <div class="thumbnail mb-3">
+                            <a href="https://www.desarrollosocialyfamilia.gob.cl/la-salud-mental-importa" target="_blank">
+                                <img src="libs/client/images/ministerio.jpg" alt="lllll" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="text-center">
+                            <h3>Desarrollo Social y Familia</h3>
+                            <p>Un espacio donde se comparte información sobre las señales que pueden afectar la salud mental de las personas y programas que ofrece el Gobierno de Chile.</p>
+                            <p><a href="https://www.desarrollosocialyfamilia.gob.cl/la-salud-mental-importa" target="_blank">Más información</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+                    <div class="product-item-lg d-flex flex-column align-items-center">
+                        <div class="thumbnail mb-3">
+                            <a href="https://saludmental.achs.cl/" target="_blank">
+                                <img src="libs/client/images/achs5.jpg" alt="jjjjjjjjj" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="text-center">
+                            <h3>ACHS: Salud Mental</h3>
+                            <p>Si eres empleador o trabajador, en este espacio podrás mantenerte informado sobre la salud mental en empresas.</p>
+                            <p><a href="https://saludmental.achs.cl/" target="_blank">Más información</a></p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+                    <div class="product-item-lg d-flex flex-column align-items-center">
+                        <div class="thumbnail mb-3">
+                            <a href="https://www.gob.cl/saludablemente/ayudaprofesionales/" target="_blank">
+                                <img src="libs/client/images/ayuda2.jpg" alt="Kkkkkkr" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="text-center">
+                            <h3>Ayuda de profesionales</h3>
+                            <p>Si deseas acceder a ayuda ofrecida por el Gobierno de Chile, acá podrás encontrar información relacionada como teléfonos y contactos directos.</p>
+                            <p><a href="https://www.gob.cl/saludablemente/ayudaprofesionales/" target="_blank">Más información</a></p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+                    <div class="product-item-lg d-flex flex-column align-items-center">
+                        <div class="thumbnail mb-3">
+                            <a href="https://www.crececontigo.gob.cl/beneficios/apoyo-para-una-salud-mental-integral-etapaninos-y-ninas-de-4-anos-o-mas/" target="_blank">
+                                <img src="libs/client/images/nino4.jpg" alt="jjjjjjj" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="text-center">
+                            <h3>Salud Mental Infantil</h3>
+                            <p>El Programa de Apoyo a la Salud Mental Infantil PASMI tiene por objeto brindar diagnóstico y tratamiento a niños que tengan la edad de 5 a 9 años</p>
+                            <p><a href="https://www.crececontigo.gob.cl/beneficios/apoyo-para-una-salud-mental-integral-etapaninos-y-ninas-de-4-anos-o-mas/" target="_blank">Más información</a></p>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    
+    <!-- End Popular Product -->
+
+    <!-- Start Testimonial Slider -->
+    <div class="testimonial-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 mx-auto text-center">
+                    <h2 class="section-title">Testimonios</h2>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="testimonial-slider-wrap text-center">
+
+                        <div id="testimonial-nav">
+                            <span class="prev" data-controls="prev"><span class="fa fa-chevron-left"></span></span>
+                            <span class="next" data-controls="next"><span class="fa fa-chevron-right"></span></span>
+                        </div>
+
+                        <div class="testimonial-slider">
+
+                            <div class="item">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-8 mx-auto">
+
+                                        <div class="testimonial-block text-center">
+                                            <blockquote class="mb-5">
+                                                <p>&ldquo;Descubrí la web de salud mental en un momento crucial de mi vida. Gracias a su fácil acceso, pude conectarme rápidamente con especialistas que comprendieron mi situación. La sección de autoayuda me proporcionó herramientas prácticas que aplico diariamente. Esta plataforma ha sido un salvavidas para mi bienestar emocional.&rdquo;</p>
+                                            </blockquote>
+
+                                            <div class="author-info">
+                                                <div class="author-pic">
+                                                    <img src="libs/client/images/jordy.jpg" alt="Jordhy Thompson"
+                                                        class="img-fluid">
+                                                </div>
+                                                <h3 class="font-weight-bold">Jordhy Thompson</h3>
+                                                <span class="position d-block mb-3">Deportista. Jugador de Colo-Colo.</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END item -->
+
+                            <div class="item">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-8 mx-auto">
+
+                                        <div class="testimonial-block text-center">
+                                            <blockquote class="mb-5">
+                                                <p>&ldquo;La web de salud mental ha sido mi refugio. Acceder a profesionales capacitados fue tan sencillo como hacer clic. Hay muchos consejos prácticos que han sido mi guía constante. Estoy agradecido por encontrar un espacio en línea que realmente se preocupa por la salud mental de las personas.&rdquo;</p>
+                                            </blockquote>
+
+                                            <div class="author-info">
+                                                <div class="author-pic">
+                                                    <img src="libs/client/images/corchea.jpg" alt="Román Spaceronin7"
+                                                        class="img-fluid">
+                                                </div>
+                                                <h3 class="font-weight-bold">Román Spaceronin7 (Corxea)</h3>
+                                                <span class="position d-block mb-3">Youtuber. Streamer y compositor</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END item -->
+
+                            <div class="item">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-8 mx-auto">
+
+                                        <div class="testimonial-block text-center">
+                                            <blockquote class="mb-5">
+                                                <p>&ldquo;Encontré la web de salud mental en un momento de necesidad extrema. La rapidez con la que pude conectarme con especialistas me sorprendió gratamente. Esta plataforma ha cambiado mi perspectiva y ha sido un apoyo invaluable en mi viaje hacia la salud mental.&rdquo;</p>
+                                            </blockquote>
+
+                                            <div class="author-info">
+                                                <div class="author-pic">
+                                                    <img src="libs/client/images/brit.jpg" alt="Britany Spears"
+                                                        class="img-fluid">
+                                                </div>
+                                                <h3 class="font-weight-bold">Britany Spears</h3>
+                                                <span class="position d-block mb-3">Cantante y diseñadora</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END item -->
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Testimonial Slider -->
+
 @endsection
+>>>>>>> fd7273f981334216d52213468862fdf32000552a
