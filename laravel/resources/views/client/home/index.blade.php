@@ -187,7 +187,7 @@
                         </div>
                         <div class="text-center">
                             <h3>ACHS: Salud Mental</h3>
-                            <p>Si eres empleador o trabajador, en este espacio podrás mantenerte informado sobre la salud mental en estos espacios.</p>
+                            <p>Si eres empleador o trabajador, en este espacio podrás mantenerte informado sobre la salud mental en empresas.</p>
                             <p><a href="https://saludmental.achs.cl/" target="_blank">Más información</a></p>
                         </div>
                     </div>
