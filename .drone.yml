@@ -1,0 +1,21 @@
+kind: pipeline
+type: docker
+name: default
+
+environment:
+  APP_URL: http://mind-well.online  # Define la URL de tu aplicación como una variable de entorno
+
+steps:
+  - name: install_dependencies
+    image: php:7.4
+    commands:
+      - apt-get update
+      - apt-get install -y unzip
+      - curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+      - composer install
+
+  - name: run_tests
+    image: minidwell-laravel-monolitico-app
+    commands:
+      - php artisan test --base-url=$APP_URL  # Pasa la URL de la aplicación como argumento
+
