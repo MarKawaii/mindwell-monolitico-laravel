@@ -23,7 +23,6 @@
 
     .product-section img {
         width: 461px;
-        /* Ajusta el ancho según tus preferencias */
         height: 441px;
     }
 
@@ -378,8 +377,4 @@
 </div>
 <!-- End Testimonial Slider -->
 
-
-   
-
 @endsection
-

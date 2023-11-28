@@ -70,34 +70,42 @@
             <!-- Start Column 1 -->
             <div class="col-12 col-md-6 col-lg-3 mb-5 mb-md-0">
                 <img src="libs/client/images/alan.jpg" class="img-fluid mb-5 rounded">
-                <h3 clas><a href="#"><span class="">Alan</span> Jara</a></h3>
+                <h3 clas><span class="">Alan</span> Jara</a></h3>
                     <span class="d-block position mb-4">Estudiante de Ingeniería en Informática</span>
-                    <p>ssss</p>
+                            <ul>
+                                <li>Edad: 26 años</li>
+                                <li>Residencia: Maipú, Región Metropolitana</li>
+                                <li>Especialidad: Desconocida</li>
+                            </ul>
                     <p class="mb-0"><a href="https://www.linkedin.com/in/alan-jara-616427140/" class="more dark">Perfil de LinkedIn<span class="icon-arrow_forward"></span></a></p>
             </div> 
             <!-- End Column 1 -->
 
             <!-- Start Column 2 -->
             <div class="col-12 col-md-6 col-lg-3 mb-5 mb-md-0">
-                <img src="libs/client/images/yo3.jpg" class="img-fluid mb-5 w-98 rounded">
-
-                <h3 clas><a href="#"><span class="">Diego</span> Arancibia</a></h3>
+                <img src="libs/client/images/yo3.jpg" class="img-fluid mb-5 rounded">
+                <h3 clas><span class="">Diego</span> Arancibia</a></h3>
                     <span class="d-block position mb-4">Estudiante de Ingeniería en Informática</span>
-                    <p>Separated they live in.
-                    Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                    <p class="mb-0"><a href="https://www.linkedin.com/in/diego-ignacio-arancibia-pinto-92a3301ba/" class="more dark">Perfil de LinkedIn <span class="icon-arrow_forward"></span></a></p>
-
+                            <ul>
+                                <li>Edad: 34 años</li>
+                                <li>Residencia: Maipú, Región Metropolitana</li>
+                                <li>Especialidad: Desarrollo Web - PM</li>
+                            </ul>
+                    <p class="mb-0"><a href="https://www.linkedin.com/in/alan-jara-616427140/" class="more dark">Perfil de LinkedIn<span class="icon-arrow_forward"></span></a></p>
             </div> 
             <!-- End Column 2 -->
 
             <!-- Start Column 3 -->
             <div class="col-12 col-md-6 col-lg-3 mb-5 mb-md-0">
                 <img src="libs/client/images/carlos.jpg" class="img-fluid mb-5 rounded">
-                <h3 clas><a href="#"><span class="">Carlos</span> Poblete</a></h3>
+                <h3 clas><span class="">Carlos</span> Poblete</a></h3>
                     <span class="d-block position mb-4">Estudiante de Ingeniería en Informática</span>
-                    <p>Separated they live in.
-                    Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                    <p class="mb-0"><a href="https://www.linkedin.com/in/carlos-poblete-plaza-8a1347268/" class="more dark">Perfil de LinkedIn <span class="icon-arrow_forward"></span></a></p>
+                            <ul>
+                                <li>Edad: 30 años</li>
+                                <li>Residencia: Maipú, Región Metropolitana</li>
+                                <li>Especialidad: QA- Desarrollo Web</li>
+                            </ul>
+                    <p class="mb-0"><a href="https://www.linkedin.com/in/alan-jara-616427140/" class="more dark">Perfil de LinkedIn<span class="icon-arrow_forward"></span></a></p>
             </div> 
             <!-- End Column 3 -->
 

@@ -14,7 +14,7 @@
                         <!-- Agrega un título centrado -->
                     <h2 class="text-center mb-4">¡Contáctanos!</h2>
                     <!-- Agrega un subtitulo centrado -->
-                    <p class="text-center mb-5">Si quieres ser parte de el equipo de especialistas médicos 
+                    <p class="text-center mb-5">Si quieres ser parte del equipo de especialistas médicos 
                         o si tienes alguna duda estamos aquí para ayudarte, déjanos tu mensaje, nuestro equipo se contactará contigo a la brevedad.</p>
 
                         <div class="row mb-5">
