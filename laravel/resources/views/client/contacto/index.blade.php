@@ -11,6 +11,12 @@
             <div class="block">
                 <div class="row justify-content-center">
                     <div class="col-md-8 col-lg-8 pb-4">
+                        <!-- Agrega un título centrado -->
+                    <h2 class="text-center mb-4">¡Contáctanos!</h2>
+                    <!-- Agrega un subtitulo centrado -->
+                    <p class="text-center mb-5">Si quieres ser parte de el equipo de especialistas médicos 
+                        o si tienes alguna duda estamos aquí para ayudarte, déjanos tu mensaje, nuestro equipo se contactará contigo a la brevedad.</p>
+
                         <div class="row mb-5">
                             <div class="col-lg-4">
                                 <div class="service no-shadow align-items-center link horizontal d-flex active"
