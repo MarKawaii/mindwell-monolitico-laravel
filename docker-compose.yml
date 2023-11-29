@@ -1,7 +1,6 @@
 version: '3'
 services:
 
-
   #PHP Service
   app:
     build:
@@ -51,15 +50,13 @@ services:
       - ./docker/mysql/my.cnf:/etc/mysql/my.cnf
     networks:
       - app-network-minidwell
-
 #Docker Networks
+
 networks:
   app-network-minidwell:
     driver: bridge
-
+    
 #Volumes
 volumes:
   dbdata:
     driver: local
-
-#jenkins
