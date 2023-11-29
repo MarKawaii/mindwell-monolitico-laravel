@@ -38,8 +38,11 @@
             <div class="col-lg-5">
                 <div class="intro-excerpt">
                     <h1><span class="d-block">Mind-Well</span> Salud Mental</h1>
-                    <p class="mb-4">Cuidado especializado y compasivo en un entorno seguro y acogedor, para guiarle
-                        hacia su bienestar emocional.</p>
+                    <p class="mb-4" style="color: white;">
+                        <li style="color: white;">Inicia sesión para poder visualizar los especialistas</li>
+                        <li style="color: white;">Cuidado especializado y compasivo en un entorno seguro y acogedor, para guiarle
+                            hacia su bienestar emocional.</li>
+                    </p>
                     <p><a href="{{ route('services') }}" class="btn btn-secondary me-2">Servicios</a><a
                             href="{{ route('contactanos.index') }}" class="btn btn-white-outline"
                             target="_blank">Contacto</a></p>

@@ -50,7 +50,9 @@
                     <!-- Ítems autenticados... -->
                     <li>
                         <a class="nav-link" href="{{ route('perfil.edit', auth()->user()->id) }}">
+                            <span title="Inicio de Sesión" class="hover-tooltip">
                             <i class="fa-solid fa-user fa-lg" aria-hidden="true"></i>
+                            </span>
                         </a>
                     </li>
                     
@@ -65,7 +67,9 @@
                     <!-- Ítems no autenticados... -->
                     <li>
                         <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#googleLoginModal">
-                            <i class="fa-solid fa-user fa-lg" aria-hidden="true"></i>
+                            <span title="Inicio de Sesión" class="hover-tooltip">
+                                <i class="fa-solid fa-user fa-lg" aria-hidden="true"></i>
+                            </span>
                         </a>
                     </li>
                 @endif

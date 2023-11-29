@@ -21,7 +21,7 @@
             <div class="col-lg-5">
                 <div class="intro-excerpt">
                     <h1><span class="d-block">Autoayuda</span> </h1>
-                    <p class="mb-4">Somos los más duros en Salud mental
+                    <p class="mb-4">En este espacio encontrarás diversos tips y recursos de autoyuda cuando te sientas deprimido o con pensamientos inquietantes.
                     </p>
                     {{-- <p><a href="{{ route('services') }}" class="btn btn-secondary me-2">Servicios</a><a href="{{ route('contactus') }}"
                             class="btn btn-white-outline">Contacto</a></p> --}}

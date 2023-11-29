@@ -34,55 +34,17 @@
         <div class="row justify-content-between">
             <div class="col-lg-6">
                 <h2 class="section-title">¿Por qué nosotros?</h2>
-                <p>Como equipo de Mind-Well, queremos brindarte un apoyo para acceder a información sobre Salud mental y un fácil acceso a nuestros especialistas</p>
+                <p>Como equipo de Mind-Well, queremos brindarte un apoyo para acceder a información sobre Salud mental y un fácil acceso a nuestros especialistas. Contamos con estos servicios:</p>
 
-                <div class="row my-5">
-                    <div class="col-6 col-md-6">
-                        <div class="feature">
-                            <div class="icon">
-                                <img src="libs/client/images/truck.svg" alt="Image" class="imf-fluid">
-                            </div>
-                            <h3>Fast &amp; Free Shipping</h3>
-                            <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
-                                vulputate.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-6 col-md-6">
-                        <div class="feature">
-                            <div class="icon">
-                                <img src="libs/client/images/bag.svg" alt="Image" class="imf-fluid">
-                            </div>
-                            <h3>Easy to Shop</h3>
-                            <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
-                                vulputate.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-6 col-md-6">
-                        <div class="feature">
-                            <div class="icon">
-                                <img src="libs/client/images/support.svg" alt="Image" class="imf-fluid">
-                            </div>
-                            <h3>24/7 Support</h3>
-                            <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
-                                vulputate.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-6 col-md-6">
-                        <div class="feature">
-                            <div class="icon">
-                                <img src="libs/client/images/return.svg" alt="Image" class="imf-fluid">
-                            </div>
-                            <h3>Hassle Free Returns</h3>
-                            <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
-                                vulputate.</p>
-                        </div>
-                    </div>
-
-                </div>
+                <ul>
+                    <li>Acceso rápido a especialists de salud, sólo iniciando sesión.</li>
+                    <li>Puedes contar con diversos tips de autoayuda</li>
+                    <li>Te puedes enterar de las noticias sobre salud mental y de redes de apoyo</li>
+                    <li>Puedes visualizar centros médicos de salud mental</li>
+                    <li>¡Nuestro chatbot ayudará a resolver tus dudas!</li>
+                    <li>Visualizar distintos programas de salud mental del gobierno</li>
+                    
+                </ul>
             </div>
 
             <div class="col-lg-5">

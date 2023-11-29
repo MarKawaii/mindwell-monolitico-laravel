@@ -10,7 +10,7 @@
             <div class="col-lg-5">
                 <div class="intro-excerpt">
                     <h1><span class="d-block">¿Quiénes somos?</span> </h1>
-                    <p class="mb-4">Somos los más duros en Salud mental
+                    <p class="mb-4">Estudiantes, entusiastas por querer mejorar la salud mental en Chile.
                     </p>
                     {{-- <p><a href="{{ route('services') }}" class="btn btn-secondary me-2">Servicios</a><a href="{{ route('contactus') }}"
                             class="btn btn-white-outline">Contacto</a></p> --}}
@@ -32,9 +32,8 @@
     <div class="row">
         <div class="col-4">
             <h2 class="mb-4 section-title">Somos estudiantes con ganas de ser unos excelentes profesionales</h2>
-                <p class="mb-4">La salud mental incluye nuestro bienestar emocional, psicológico y social. Afecta la forma en que pensamos, 
-                    sentimos y actuamos cuando enfrentamos la vida. También ayuda a determinar cómo manejamos el estrés, nos relacionamos con los demás
-                    y tomamos decisiones. La salud mental es importante en todas las etapas de la vida, desde la niñez y la adolescencia hasta la adultez y la vejez. 
+                <p class="mb-4">Como estudiantes de Duoc UC, queremos aportar con nuestro granito de arena, realizando un pequeño aporte para la salud mental en Chile, sabemos las dificultades
+                    que se presentan en Chile en temas referentes a salud mental y el difícil acceso a los recursos, es por esto que queremos unificar todos esos recursos y dejarlos en un solo lugar. 
                 </p>
                 
 
@@ -44,9 +43,9 @@
             <img src="libs/client/images/duoc2.jpg" alt="Image" class="img-fluid w-100 float-lg-right rounded">
         </div>
 
-        <div class="col-4">
+        {{-- <div class="col-4">
             <img src="libs/client/images/duoc2.jpg" alt="Image" class="img-fluid w-100 float-lg-right rounded">
-        </div>
+        </div> --}}
 
     </div>
 
