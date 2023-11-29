@@ -42,7 +42,9 @@ class AdminTrabajadorController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $user = User::find($id);
+
+        return view('admin.trabajador.show', compact('user'));
     }
 
     /**

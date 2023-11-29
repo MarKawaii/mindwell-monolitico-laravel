@@ -35,7 +35,7 @@
                                         <td>{{ \Carbon\Carbon::parse($user->created_at)->format('d/m/Y') }}</td>
                                         <td>{{ \Carbon\Carbon::parse($user->updated_at)->format('d/m/Y') }}</td>
                                         <td>
-                                            <a href="" class="btn btn-success fa-solid fa-eye"></a>
+                                            <a href="{{ route('trabajador.show', $user->id) }}" class="btn btn-success fa-solid fa-eye"></a>
                                             <a href="{{ route('trabajador.edit', $user->id) }}"
                                                 class="btn btn-warning fas fa-edit"></a>
 
